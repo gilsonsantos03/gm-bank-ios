@@ -2,7 +2,7 @@ import Cartography
 import UIKit
 
 protocol SignUpViewDelegate: AnyObject {
-    func didTapOnButton()
+    func didTapOnButton(name: String, email: String, password: String)
 }
 
 protocol SignUpViewProtocol: UIView {
@@ -78,7 +78,7 @@ final class SignUpView: UIView, SignUpViewProtocol {
     // MARK: - Helpers
     
     @objc func didTapSubmitButton() {
-        delegate?.didTapOnButton()
+        delegate?.didTapOnButton(name: nameTextView.text ?? "", email: emailTextView.text ?? "", password: passwordTextView.text ?? "")
     }
     
     // MARK: - Constrains

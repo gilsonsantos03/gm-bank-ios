@@ -55,7 +55,7 @@ extension SignUpController: SignUpDisplayLogic {
 }
 
 extension SignUpController: SignUpViewDelegate {
-    func didTapOnButton() {
-        interactor.registerUser(request: .init())
+    func didTapOnButton(name: String, email: String, password: String) {
+        interactor.registerUser(request: .init(name: name, email: email, password: password))
     }
 }

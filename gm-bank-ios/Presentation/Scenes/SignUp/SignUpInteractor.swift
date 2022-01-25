@@ -16,12 +16,12 @@ final class SignUpInteractor {
 
 extension SignUpInteractor: SignUpBusinessLogic {
     func registerUser(request: SignUpModels.RegisterUser.Request) {
-        registerUser.execute { response in
+        registerUser.execute(name: request.name, email: request.email, password: request.password) { response in
             switch response {
-            case .success(let user):
-                print(user.data)
+            case .success(let authentication):
+                print(authentication.user)
             case .failure(let error):
-                print("deu ruim \(error)")
+                print("ERROR: \(error)")
             }
         }
     }

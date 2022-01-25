@@ -3,10 +3,14 @@ import Foundation
 enum SignUpModels {
     
     enum RegisterUser {
-        struct Request {}
+        struct Request {
+            let name: String
+            let email: String
+            let password: String
+        }
         
         struct Response {
-            let user: [Datum]
+            let user: [User]
         }
         
         struct ViewModel {

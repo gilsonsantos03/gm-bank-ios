@@ -4,7 +4,7 @@ import Foundation
 extension URLRequestBuilder {
 
     var baseURL: URL {
-        return URL(string: "https://www.balldontlie.io/")!
+        return URL(string: "http://localhost:3333")!
     }
 
     var requestURL: URL {
@@ -23,12 +23,6 @@ extension URLRequestBuilder {
     var headers: HTTPHeaders {
         var header = HTTPHeaders()
         header["Content-Type"] = "application/json"
-
-        let fooToken: String? = "fooToken"
-
-        if let token = fooToken {
-            header["Authorization"] = "Bearer \(token)"
-        }
 
         return header
     }

@@ -7,15 +7,19 @@ public final class UserRepository: UserRepositoryInterface {
         self.network = network
     }
     
-    public func registerUser(completion: @escaping (Result<User, CustomError>) -> Void) {
-        let request = GetTeamsRequest()
+    public func registerUser(name: String, email: String, password: String, completion: @escaping (Result<Authentication, CustomError>) -> Void) {
+        let request = RegisterUserRequest.user(
+            name: name,
+            email: email,
+            password: password
+        )
 
-        network.request(request: request) { (result: Result<User, CustomError>) in
+        network.request(request: request) { (result: Result<Authentication, CustomError>) in
             switch result {
-            case .success(let teams):
-                completion(.success(teams))
+            case .success(let authentication):
+                completion(.success(authentication))
             case .failure(let error):
-                completion(.failure(error))
+                completion(.failure(.unexpected(message: error.description)))
             }
         }
     }
