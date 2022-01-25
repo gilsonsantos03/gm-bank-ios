@@ -1,8 +1,9 @@
-//
-//  SignUpRouter.swift
-//  gm-bank-ios
-//
-//  Created by gilson.santos on 25/01/22.
-//
+import UIKit
 
-import Foundation
+protocol SignUpRoutingLogic: AnyObject {}
+
+final class SignUpRouter {
+    weak var viewController: (UIViewController & SignUpDisplayLogic)?
+}
+
+extension SignUpRouter: SignUpRoutingLogic {}

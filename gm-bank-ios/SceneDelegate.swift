@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         let signupController = gm_bank_ios.SignUpConfigurator.resolve()
-        let navigationController = UINavigationController(rootViewController: homeController)
+        let navigationController = UINavigationController(rootViewController: signupController)
 
         window = UIWindow(windowScene: scene)
         window?.rootViewController = navigationController

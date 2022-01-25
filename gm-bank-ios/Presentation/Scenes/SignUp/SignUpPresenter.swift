@@ -1,8 +1,11 @@
-//
-//  SignUpPresenter.swift
-//  gm-bank-ios
-//
-//  Created by gilson.santos on 25/01/22.
-//
+import UIKit
 
-import Foundation
+protocol SignUpPresentationLogic: AnyObject {}
+
+final class SignUpPresenter {
+    var view: SignUpDisplayLogic?
+}
+
+extension SignUpPresenter: SignUpPresentationLogic {
+    
+}

@@ -1,8 +1,15 @@
-//
-//  SignUpInteractor.swift
-//  gm-bank-ios
-//
-//  Created by gilson.santos on 25/01/22.
-//
+import UIKit
 
-import Foundation
+protocol SignUpBusinessLogic: AnyObject {}
+
+final class SignUpInteractor {
+    private let presenter: SignUpPresentationLogic
+
+    init(presenter: SignUpPresentationLogic) {
+        self.presenter = presenter
+    }
+}
+
+extension SignUpInteractor: SignUpBusinessLogic {
+    
+}

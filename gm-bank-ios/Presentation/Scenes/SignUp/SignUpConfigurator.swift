@@ -3,12 +3,10 @@ import UIKit
 public enum SignUpConfigurator {
 
     public static func resolve() -> UIViewController {
-        let router = HomeRouter()
-        let presenter = HomePresenter()
-        let teamsRepository = TeamsRepository()
-        let getTeamsUseCase = GetTeams(repository: teamsRepository)
-        let interactor = HomeInteractor(presenter: presenter, getTeams: getTeamsUseCase)
-        let viewController = HomeViewController(router: router, interactor: interactor)
+        let router = SignUpRouter()
+        let presenter = SignUpPresenter()
+        let interactor = SignUpInteractor(presenter: presenter)
+        let viewController = SignUpController(router: router, interactor: interactor)
 
         router.viewController = viewController
         presenter.view = viewController
