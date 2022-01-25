@@ -1,0 +1,6 @@
+framework module Pods_gm_bank_ios {
+  umbrella header "Pods-gm-bank-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

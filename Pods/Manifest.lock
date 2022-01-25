@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.4)
+  - Cartography (3.1.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - Cartography (~> 3.0)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cartography
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: b95141bede034a327c1561c56406d0b59a55d735
+
+COCOAPODS: 1.10.0

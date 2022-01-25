@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4435A08C27A072F100EF6EAD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A08B27A072F100EF6EAD /* SignUpViewController.swift */; };
+		4435A08E27A072F900EF6EAD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A08D27A072F900EF6EAD /* SignUpView.swift */; };
+		4435A09027A072FF00EF6EAD /* SignUpConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A08F27A072FF00EF6EAD /* SignUpConfigurator.swift */; };
+		4435A09227A0730800EF6EAD /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09127A0730800EF6EAD /* SignUpInteractor.swift */; };
+		4435A09427A0730E00EF6EAD /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09327A0730E00EF6EAD /* SignUpPresenter.swift */; };
+		4435A09627A0731A00EF6EAD /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09527A0731A00EF6EAD /* SignUpRouter.swift */; };
+		4435A09827A0732000EF6EAD /* SignUpModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09727A0732000EF6EAD /* SignUpModels.swift */; };
+		44B5217127A0666E00B57BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217027A0666E00B57BC5 /* AppDelegate.swift */; };
+		44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217227A0666E00B57BC5 /* SceneDelegate.swift */; };
+		44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217427A0666E00B57BC5 /* ViewController.swift */; };
+		44B5217827A0666E00B57BC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B5217627A0666E00B57BC5 /* Main.storyboard */; };
+		44B5217A27A0666F00B57BC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B5217927A0666F00B57BC5 /* Assets.xcassets */; };
+		44B5217D27A0666F00B57BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B5217B27A0666F00B57BC5 /* LaunchScreen.storyboard */; };
+		85E8182672E4FC18A76405DA /* Pods_gm_bank_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3599F8ECCAF1AF4E0E76CEAD /* Pods_gm_bank_ios.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A0FC8B120829EDB4FEEF560 /* Pods-gm-bank-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gm-bank-ios.release.xcconfig"; path = "Target Support Files/Pods-gm-bank-ios/Pods-gm-bank-ios.release.xcconfig"; sourceTree = "<group>"; };
+		3599F8ECCAF1AF4E0E76CEAD /* Pods_gm_bank_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gm_bank_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4435A08B27A072F100EF6EAD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4435A08D27A072F900EF6EAD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		4435A08F27A072FF00EF6EAD /* SignUpConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConfigurator.swift; sourceTree = "<group>"; };
+		4435A09127A0730800EF6EAD /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		4435A09327A0730E00EF6EAD /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		4435A09527A0731A00EF6EAD /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		4435A09727A0732000EF6EAD /* SignUpModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModels.swift; sourceTree = "<group>"; };
+		44B5216D27A0666E00B57BC5 /* gm-bank-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gm-bank-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B5217027A0666E00B57BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44B5217227A0666E00B57BC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44B5217427A0666E00B57BC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44B5217727A0666E00B57BC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44B5217927A0666F00B57BC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44B5217C27A0666F00B57BC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44B5217E27A0666F00B57BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9650C16F02E4E05DC5E7A477 /* Pods-gm-bank-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gm-bank-ios.debug.xcconfig"; path = "Target Support Files/Pods-gm-bank-ios/Pods-gm-bank-ios.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44B5216A27A0666E00B57BC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85E8182672E4FC18A76405DA /* Pods_gm_bank_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4435A08727A072B700EF6EAD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4435A08827A072C000EF6EAD /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4435A08827A072C000EF6EAD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4435A08A27A072CF00EF6EAD /* LogIn */,
+				4435A08927A072C800EF6EAD /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4435A08927A072C800EF6EAD /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				4435A08B27A072F100EF6EAD /* SignUpViewController.swift */,
+				4435A08D27A072F900EF6EAD /* SignUpView.swift */,
+				4435A08F27A072FF00EF6EAD /* SignUpConfigurator.swift */,
+				4435A09127A0730800EF6EAD /* SignUpInteractor.swift */,
+				4435A09327A0730E00EF6EAD /* SignUpPresenter.swift */,
+				4435A09527A0731A00EF6EAD /* SignUpRouter.swift */,
+				4435A09727A0732000EF6EAD /* SignUpModels.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		4435A08A27A072CF00EF6EAD /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		44B5216427A0666E00B57BC5 = {
+			isa = PBXGroup;
+			children = (
+				44B5216F27A0666E00B57BC5 /* gm-bank-ios */,
+				44B5216E27A0666E00B57BC5 /* Products */,
+				AA30C9FAF7F0FB36395FABFF /* Pods */,
+				A3DC26F3A4D2B83DFE4525B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44B5216E27A0666E00B57BC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44B5216D27A0666E00B57BC5 /* gm-bank-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44B5216F27A0666E00B57BC5 /* gm-bank-ios */ = {
+			isa = PBXGroup;
+			children = (
+				4435A08727A072B700EF6EAD /* Presentation */,
+				44B5217027A0666E00B57BC5 /* AppDelegate.swift */,
+				44B5217227A0666E00B57BC5 /* SceneDelegate.swift */,
+				44B5217427A0666E00B57BC5 /* ViewController.swift */,
+				44B5217627A0666E00B57BC5 /* Main.storyboard */,
+				44B5217927A0666F00B57BC5 /* Assets.xcassets */,
+				44B5217B27A0666F00B57BC5 /* LaunchScreen.storyboard */,
+				44B5217E27A0666F00B57BC5 /* Info.plist */,
+			);
+			path = "gm-bank-ios";
+			sourceTree = "<group>";
+		};
+		A3DC26F3A4D2B83DFE4525B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3599F8ECCAF1AF4E0E76CEAD /* Pods_gm_bank_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA30C9FAF7F0FB36395FABFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9650C16F02E4E05DC5E7A477 /* Pods-gm-bank-ios.debug.xcconfig */,
+				1A0FC8B120829EDB4FEEF560 /* Pods-gm-bank-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44B5216C27A0666E00B57BC5 /* gm-bank-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44B5218127A0666F00B57BC5 /* Build configuration list for PBXNativeTarget "gm-bank-ios" */;
+			buildPhases = (
+				B2B8FF3FA3C2732B2D2EF2CB /* [CP] Check Pods Manifest.lock */,
+				44B5216927A0666E00B57BC5 /* Sources */,
+				44B5216A27A0666E00B57BC5 /* Frameworks */,
+				44B5216B27A0666E00B57BC5 /* Resources */,
+				49A58349B93AF12ACB2C17F6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gm-bank-ios";
+			productName = "gm-bank-ios";
+			productReference = 44B5216D27A0666E00B57BC5 /* gm-bank-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44B5216527A0666E00B57BC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					44B5216C27A0666E00B57BC5 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 44B5216827A0666E00B57BC5 /* Build configuration list for PBXProject "gm-bank-ios" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44B5216427A0666E00B57BC5;
+			productRefGroup = 44B5216E27A0666E00B57BC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44B5216C27A0666E00B57BC5 /* gm-bank-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44B5216B27A0666E00B57BC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B5217D27A0666F00B57BC5 /* LaunchScreen.storyboard in Resources */,
+				44B5217A27A0666F00B57BC5 /* Assets.xcassets in Resources */,
+				44B5217827A0666E00B57BC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49A58349B93AF12ACB2C17F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gm-bank-ios/Pods-gm-bank-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gm-bank-ios/Pods-gm-bank-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gm-bank-ios/Pods-gm-bank-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2B8FF3FA3C2732B2D2EF2CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gm-bank-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44B5216927A0666E00B57BC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4435A09627A0731A00EF6EAD /* SignUpRouter.swift in Sources */,
+				44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */,
+				4435A08E27A072F900EF6EAD /* SignUpView.swift in Sources */,
+				4435A09827A0732000EF6EAD /* SignUpModels.swift in Sources */,
+				4435A09027A072FF00EF6EAD /* SignUpConfigurator.swift in Sources */,
+				44B5217127A0666E00B57BC5 /* AppDelegate.swift in Sources */,
+				4435A08C27A072F100EF6EAD /* SignUpViewController.swift in Sources */,
+				4435A09227A0730800EF6EAD /* SignUpInteractor.swift in Sources */,
+				4435A09427A0730E00EF6EAD /* SignUpPresenter.swift in Sources */,
+				44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44B5217627A0666E00B57BC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44B5217727A0666E00B57BC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44B5217B27A0666F00B57BC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44B5217C27A0666F00B57BC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44B5217F27A0666F00B57BC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44B5218027A0666F00B57BC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44B5218227A0666F00B57BC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9650C16F02E4E05DC5E7A477 /* Pods-gm-bank-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gm-bank-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gilsonsantos03.gm-bank-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44B5218327A0666F00B57BC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0FC8B120829EDB4FEEF560 /* Pods-gm-bank-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gm-bank-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gilsonsantos03.gm-bank-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44B5216827A0666E00B57BC5 /* Build configuration list for PBXProject "gm-bank-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B5217F27A0666F00B57BC5 /* Debug */,
+				44B5218027A0666F00B57BC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44B5218127A0666F00B57BC5 /* Build configuration list for PBXNativeTarget "gm-bank-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B5218227A0666F00B57BC5 /* Debug */,
+				44B5218327A0666F00B57BC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44B5216527A0666E00B57BC5 /* Project object */;
+}
