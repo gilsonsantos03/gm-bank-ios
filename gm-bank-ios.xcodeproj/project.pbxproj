@@ -14,6 +14,17 @@
 		4435A09427A0730E00EF6EAD /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09327A0730E00EF6EAD /* SignUpPresenter.swift */; };
 		4435A09627A0731A00EF6EAD /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09527A0731A00EF6EAD /* SignUpRouter.swift */; };
 		4435A09827A0732000EF6EAD /* SignUpModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09727A0732000EF6EAD /* SignUpModels.swift */; };
+		4435A09C27A091C500EF6EAD /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09B27A091C500EF6EAD /* CustomError.swift */; };
+		4435A09F27A091EA00EF6EAD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09E27A091EA00EF6EAD /* NetworkService.swift */; };
+		4435A0A127A0920100EF6EAD /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0A027A0920100EF6EAD /* URLRequestBuilder.swift */; };
+		4435A0A327A0921900EF6EAD /* URLRequestBuilder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0A227A0921900EF6EAD /* URLRequestBuilder+Extension.swift */; };
+		4435A0A527A0922C00EF6EAD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0A427A0922C00EF6EAD /* HTTPMethod.swift */; };
+		4435A0A727A0923D00EF6EAD /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0A627A0923D00EF6EAD /* ParameterEncoding.swift */; };
+		4435A0AC27A0926C00EF6EAD /* PostUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0AB27A0926C00EF6EAD /* PostUserRequest.swift */; };
+		4435A0AE27A0928600EF6EAD /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0AD27A0928600EF6EAD /* UserRepository.swift */; };
+		4435A0B227A092D300EF6EAD /* UserRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0B127A092D300EF6EAD /* UserRepositoryInterface.swift */; };
+		4435A0B527A0930500EF6EAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0B427A0930500EF6EAD /* User.swift */; };
+		4435A0B827A0935C00EF6EAD /* RegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0B727A0935C00EF6EAD /* RegisterUser.swift */; };
 		44B5217127A0666E00B57BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217027A0666E00B57BC5 /* AppDelegate.swift */; };
 		44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217227A0666E00B57BC5 /* SceneDelegate.swift */; };
 		44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217427A0666E00B57BC5 /* ViewController.swift */; };
@@ -33,6 +44,17 @@
 		4435A09327A0730E00EF6EAD /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		4435A09527A0731A00EF6EAD /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
 		4435A09727A0732000EF6EAD /* SignUpModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModels.swift; sourceTree = "<group>"; };
+		4435A09B27A091C500EF6EAD /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		4435A09E27A091EA00EF6EAD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4435A0A027A0920100EF6EAD /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		4435A0A227A0921900EF6EAD /* URLRequestBuilder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequestBuilder+Extension.swift"; sourceTree = "<group>"; };
+		4435A0A427A0922C00EF6EAD /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		4435A0A627A0923D00EF6EAD /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		4435A0AB27A0926C00EF6EAD /* PostUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserRequest.swift; sourceTree = "<group>"; };
+		4435A0AD27A0928600EF6EAD /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		4435A0B127A092D300EF6EAD /* UserRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryInterface.swift; sourceTree = "<group>"; };
+		4435A0B427A0930500EF6EAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4435A0B727A0935C00EF6EAD /* RegisterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUser.swift; sourceTree = "<group>"; };
 		44B5216D27A0666E00B57BC5 /* gm-bank-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gm-bank-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B5217027A0666E00B57BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44B5217227A0666E00B57BC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +89,6 @@
 		4435A08827A072C000EF6EAD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				4435A08A27A072CF00EF6EAD /* LogIn */,
 				4435A08927A072C800EF6EAD /* SignUp */,
 			);
 			path = Scenes;
@@ -87,11 +108,83 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
-		4435A08A27A072CF00EF6EAD /* LogIn */ = {
+		4435A09A27A091B000EF6EAD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4435A09B27A091C500EF6EAD /* CustomError.swift */,
 			);
-			path = LogIn;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4435A09D27A091D300EF6EAD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4435A09E27A091EA00EF6EAD /* NetworkService.swift */,
+				4435A0A027A0920100EF6EAD /* URLRequestBuilder.swift */,
+				4435A0A227A0921900EF6EAD /* URLRequestBuilder+Extension.swift */,
+				4435A0A427A0922C00EF6EAD /* HTTPMethod.swift */,
+				4435A0A627A0923D00EF6EAD /* ParameterEncoding.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4435A0A827A0924D00EF6EAD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4435A0AA27A0925900EF6EAD /* Repositories */,
+				4435A0A927A0925200EF6EAD /* Requests */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4435A0A927A0925200EF6EAD /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				4435A0AD27A0928600EF6EAD /* UserRepository.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		4435A0AA27A0925900EF6EAD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4435A0AB27A0926C00EF6EAD /* PostUserRequest.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		4435A0AF27A092B000EF6EAD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4435A0B627A0934800EF6EAD /* UseCases */,
+				4435A0B327A092FA00EF6EAD /* Entities */,
+				4435A0B027A092B700EF6EAD /* Repositories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4435A0B027A092B700EF6EAD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4435A0B127A092D300EF6EAD /* UserRepositoryInterface.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		4435A0B327A092FA00EF6EAD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4435A0B427A0930500EF6EAD /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		4435A0B627A0934800EF6EAD /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				4435A0B727A0935C00EF6EAD /* RegisterUser.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		44B5216427A0666E00B57BC5 = {
@@ -115,6 +208,10 @@
 		44B5216F27A0666E00B57BC5 /* gm-bank-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4435A0AF27A092B000EF6EAD /* Domain */,
+				4435A0A827A0924D00EF6EAD /* Data */,
+				4435A09D27A091D300EF6EAD /* Network */,
+				4435A09A27A091B000EF6EAD /* Helpers */,
 				4435A08727A072B700EF6EAD /* Presentation */,
 				44B5217027A0666E00B57BC5 /* AppDelegate.swift */,
 				44B5217227A0666E00B57BC5 /* SceneDelegate.swift */,
@@ -261,14 +358,25 @@
 			files = (
 				4435A09627A0731A00EF6EAD /* SignUpRouter.swift in Sources */,
 				44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */,
+				4435A0AE27A0928600EF6EAD /* UserRepository.swift in Sources */,
+				4435A0A127A0920100EF6EAD /* URLRequestBuilder.swift in Sources */,
 				4435A08E27A072F900EF6EAD /* SignUpView.swift in Sources */,
 				4435A09827A0732000EF6EAD /* SignUpModels.swift in Sources */,
+				4435A0B227A092D300EF6EAD /* UserRepositoryInterface.swift in Sources */,
 				4435A09027A072FF00EF6EAD /* SignUpConfigurator.swift in Sources */,
+				4435A0B527A0930500EF6EAD /* User.swift in Sources */,
 				44B5217127A0666E00B57BC5 /* AppDelegate.swift in Sources */,
 				4435A08C27A072F100EF6EAD /* SignUpViewController.swift in Sources */,
+				4435A0A527A0922C00EF6EAD /* HTTPMethod.swift in Sources */,
+				4435A09C27A091C500EF6EAD /* CustomError.swift in Sources */,
+				4435A0B827A0935C00EF6EAD /* RegisterUser.swift in Sources */,
+				4435A0A727A0923D00EF6EAD /* ParameterEncoding.swift in Sources */,
 				4435A09227A0730800EF6EAD /* SignUpInteractor.swift in Sources */,
 				4435A09427A0730E00EF6EAD /* SignUpPresenter.swift in Sources */,
+				4435A0AC27A0926C00EF6EAD /* PostUserRequest.swift in Sources */,
+				4435A09F27A091EA00EF6EAD /* NetworkService.swift in Sources */,
 				44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */,
+				4435A0A327A0921900EF6EAD /* URLRequestBuilder+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

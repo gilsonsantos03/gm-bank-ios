@@ -5,7 +5,9 @@ public enum SignUpConfigurator {
     public static func resolve() -> UIViewController {
         let router = SignUpRouter()
         let presenter = SignUpPresenter()
-        let interactor = SignUpInteractor(presenter: presenter)
+        let userRepository = UserRepository()
+        let registerUser = RegisterUser(repository: userRepository)
+        let interactor = SignUpInteractor(presenter: presenter, registerUser: registerUser)
         let viewController = SignUpController(router: router, interactor: interactor)
 
         router.viewController = viewController

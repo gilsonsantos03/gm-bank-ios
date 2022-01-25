@@ -1,9 +1,17 @@
-//
-//  SignUpModels.swift
-//  gm-bank-ios
-//
-//  Created by gilson.santos on 25/01/22.
-//
-
 import Foundation
+
+enum SignUpModels {
+    
+    enum RegisterUser {
+        struct Request {}
+        
+        struct Response {
+            let user: [Datum]
+        }
+        
+        struct ViewModel {
+            let users: [String]
+        }
+    }
+}
 
