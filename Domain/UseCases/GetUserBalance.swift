@@ -12,7 +12,7 @@ public final class GetUserBalance: GetUserBalanceUseCase {
     }
 
     public func execute(userId: String, token: String, completion: @escaping ((Result<UserBalance, CustomError>) -> Void)) {
-        repository.getBalance(userId: userId, token: token) { result in
+        repository.getUserBalance(userId: userId, token: token) { result in
             switch result {
             case .success(let userBalance):
                 completion(.success(userBalance))

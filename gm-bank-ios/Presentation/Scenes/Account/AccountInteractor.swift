@@ -4,6 +4,7 @@ protocol AccountBusinessLogic: AnyObject {
     func getUserBalance(request: AccountModels.GetUserBalance.Request)
     func routeToDepositScene(request: AccountModels.RouteToDepositScene.Request)
     func routeToWithdrawScene(request: AccountModels.RouteToDepositScene.Request)
+    func routeToExtractScene(request: AccountModels.RouteToExtractScene.Request)
 }
 
 final class AccountInteractor {
@@ -38,5 +39,9 @@ extension AccountInteractor: AccountBusinessLogic {
     
     func routeToWithdrawScene(request: AccountModels.RouteToDepositScene.Request) {
         presenter.presentWithdrawScene(response: .init(userId: userId, token: userToken))
+    }
+    
+    func routeToExtractScene(request: AccountModels.RouteToExtractScene.Request) {
+        presenter.presentExtractScene(response: .init(userId: userId, token: userToken))
     }
 }

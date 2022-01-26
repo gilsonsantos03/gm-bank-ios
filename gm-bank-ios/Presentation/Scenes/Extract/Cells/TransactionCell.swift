@@ -6,68 +6,44 @@ final class TransactionCell: UITableViewCell {
     static let identifier = "TeamCell"
 
     struct ViewModel {
-        let id: String
-        let action: String
+        let action: Action
         let amount: Double
         let date: String
     }
 
-    var id: String?
-    var action: String?
-    var amount: Double?
-    var date: String?
-
     private let backgroundBox: UIView = {
         let view = UIView()
+        view.backgroundColor = .white
         view.layer.cornerRadius = 4
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.lightGray.cgColor
         return view
     }()
-
-    private let icon: UILabel = {
-        let label = UILabel()
-        label.backgroundColor = .black
-        label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 16)
-        label.textAlignment = .center
-        label.layer.borderWidth = 3
-        label.layer.masksToBounds = true
-        label.layer.cornerRadius = 6
-        return label
-    }()
-
-    private let name: UILabel = {
+    
+    private let transactionType: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         return label
     }()
-
-    private let city: UILabel = {
+    
+    private let transactionDate: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 12, weight: .light)
+        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         return label
     }()
-
-    private let rightArrow: UILabel = {
+    
+    private let transactionAmount: UILabel = {
         let label = UILabel()
-        label.textColor = .darkGray
-        label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
-        label.text = ">"
+        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         return label
-    }()
-
-    private let stack: UIStackView = {
-        let stack = UIStackView()
-        stack.axis = .vertical
-        stack.spacing = 6
-        return stack
     }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.backgroundColor = .black
         setup()
     }
 
@@ -76,20 +52,14 @@ final class TransactionCell: UITableViewCell {
     }
 
     private func setup() {
-        stackLabels()
         setupConstraints()
     }
 
     private func setupConstraints() {
         constrainBackgroundBox()
-        constrainIcon()
-        constrainStack()
-        constrainRightArrow()
-    }
-
-    private func stackLabels() {
-        stack.addArrangedSubview(name)
-        stack.addArrangedSubview(city)
+        constrainTransactionTypeLabel()
+        constrainTransactionTypeDate()
+        constrainTransactionTypeAmount()
     }
 
     private func constrainBackgroundBox() {
@@ -101,36 +71,36 @@ final class TransactionCell: UITableViewCell {
             background.bottom == view.bottom - 6
         }
     }
-
-    private func constrainIcon() {
-        addSubview(icon)
-        constrain(icon, backgroundBox) { icon, background in
-            icon.leading == background.leading + 8
-            icon.centerY == background.centerY
-            icon.width == 40
-            icon.height == 30
+    
+    private func constrainTransactionTypeLabel() {
+        addSubview(transactionType)
+        constrain(transactionType, backgroundBox) { label, background in
+            label.top == background.top + 4
+            label.leading == background.leading + 16
         }
     }
-
-    private func constrainStack() {
-        addSubview(stack)
-        constrain(stack, icon, backgroundBox) { stack, icon, background in
-            stack.leading == icon.trailing + 16
-            stack.centerY == background.centerY
+    
+    private func constrainTransactionTypeDate() {
+        addSubview(transactionDate)
+        constrain(transactionDate, backgroundBox, transactionType) { date, background, type in
+            date.centerY == background.centerY
+            date.leading == type.leading
         }
     }
-
-    private func constrainRightArrow() {
-        addSubview(rightArrow)
-        constrain(rightArrow, backgroundBox) { arrow, background in
-            arrow.trailing == background.trailing - 10
-            arrow.centerY == background.centerY
+    
+    private func constrainTransactionTypeAmount() {
+        addSubview(transactionAmount)
+        constrain(transactionAmount, backgroundBox, transactionDate) { amount, background, date in
+            amount.bottom == background.bottom - 4
+            amount.leading == date.leading
         }
     }
 }
 
 extension TransactionCell {
     func configure(with display: ViewModel) {
-        
+        transactionType.text = "Tipo: \(display.action)"
+        transactionDate.text = "Data: \(display.date)"
+        transactionAmount.text = "R$ \(display.amount)"
     }
 }

@@ -40,7 +40,7 @@ public final class UserRepository: UserRepositoryInterface {
         }
     }
     
-    public func getBalance(userId: String, token: String, completion: @escaping (Result<UserBalance, CustomError>) -> Void) {
+    public func getUserBalance(userId: String, token: String, completion: @escaping (Result<UserBalance, CustomError>) -> Void) {
         let request = GetUserBalanceRequest.balance(
             userId: userId,
             token: token
@@ -74,8 +74,21 @@ public final class UserRepository: UserRepositoryInterface {
         
         network.request(request: request) { (result: Result<AccountMovimentation, CustomError>) in
             switch result {
-            case .success(let deposit):
-                completion(.success(deposit))
+            case .success(let withdraw):
+                completion(.success(withdraw))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    public func getUserExtract(userId: String, token: String, completion: @escaping (Result<TransactionHistory, CustomError>) -> Void) {
+        let request = GetUserExtractRequest.extract(userId: userId, token: token)
+        
+        network.request(request: request) { (result: Result<TransactionHistory, CustomError>) in
+            switch result {
+            case .success(let extract):
+                completion(.success(extract))
             case .failure(let error):
                 completion(.failure(error))
             }

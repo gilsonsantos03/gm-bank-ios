@@ -41,19 +41,21 @@ final class ExtractViewController: UIViewController {
 
     private func setupNavigationBar() {
         navigationController?.setNavigationBarHidden(false, animated: true)
-        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.barTintColor = .black
         navigationController?.navigationBar.tintColor = .white
         navigationItem.title = "Extrato"
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 26, weight: .bold)
         ]
+        navigationController?.navigationBar.isTranslucent = false
     }
 }
 
 extension ExtractViewController: ExtractDisplayLogic {
     func display(viewModel: ExtractModels.ShowExtract.ViewModel) {
-        
+        transactions = viewModel.transactions
+        customView.reload()
     }
 }
 
@@ -63,7 +65,7 @@ extension ExtractViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        60
+        100
     }
 }
 
@@ -76,6 +78,7 @@ extension ExtractViewController: UITableViewDataSource {
 
         let transaction = transactions[indexPath.row]
         cell.configure(with: transaction)
+        cell.selectionStyle = .none
 
         return cell
     }

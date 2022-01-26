@@ -41,4 +41,18 @@ enum AccountModels {
             let token: String
         }
     }
+    
+    enum RouteToExtractScene {
+        struct Request {}
+        
+        struct Response {
+            let userId: String
+            let token: String
+        }
+        
+        struct ViewModel {
+            let userId: String
+            let token: String
+        }
+    }
 }

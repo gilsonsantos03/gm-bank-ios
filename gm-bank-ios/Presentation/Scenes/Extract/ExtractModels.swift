@@ -6,7 +6,7 @@ enum ExtractModels {
         struct Request {}
 
         struct Response {
-            let transactionHistory: [TransactionHistory]
+            let extract: [Extract]
         }
 
         struct ViewModel {

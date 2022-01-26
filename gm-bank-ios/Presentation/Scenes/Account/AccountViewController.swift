@@ -4,6 +4,7 @@ protocol AccountDisplayLogic: AnyObject {
     func displayUserBalance(viewModel: AccountModels.GetUserBalance.ViewModel)
     func displayDepositScene(viewModel: AccountModels.RouteToDepositScene.ViewModel)
     func displayWithdrawScene(viewModel: AccountModels.RouteToDepositScene.ViewModel)
+    func displayExtractScene(viewModel: AccountModels.RouteToExtractScene.ViewModel)
 }
 
 final class AccountViewController: UIViewController {
@@ -67,6 +68,10 @@ extension AccountViewController: AccountDisplayLogic {
     func displayWithdrawScene(viewModel: AccountModels.RouteToDepositScene.ViewModel) {
         router.routeToWithdrawScene(userId: viewModel.userId, token: viewModel.token)
     }
+    
+    func displayExtractScene(viewModel: AccountModels.RouteToExtractScene.ViewModel) {
+        router.routeToExtractScene(userId: viewModel.userId, token: viewModel.token)
+    }
 }
 
 extension AccountViewController: AccountViewDelegate {
@@ -79,6 +84,6 @@ extension AccountViewController: AccountViewDelegate {
     }
     
     func didTapOnExtractButton() {
-        print("extract")
+        interactor.routeToExtractScene(request: .init())
     }
 }

@@ -1,13 +1,13 @@
 
 import Foundation
 
-struct TransactionHistory: Codable {
+public struct TransactionHistory: Codable {
     let extract: [Extract]
 }
 
-struct Extract: Codable {
+public struct Extract: Codable {
     let action: Action
-    let amount: Int
+    let amount: Double
     let date, id: String
 
     enum CodingKeys: String, CodingKey {
@@ -16,7 +16,7 @@ struct Extract: Codable {
     }
 }
 
-enum Action: String, Codable {
+public enum Action: String, Codable {
     case deposit = "DEPOSIT"
     case withdrawn = "WITHDRAWN"
 }

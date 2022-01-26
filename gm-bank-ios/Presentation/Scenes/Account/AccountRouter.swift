@@ -3,6 +3,7 @@ import UIKit
 protocol AccountRoutingLogic: AnyObject {
     func routeToDepositScene(userId: String, token: String)
     func routeToWithdrawScene(userId: String, token: String)
+    func routeToExtractScene(userId: String, token: String)
 }
 
 final class AccountRouter {
@@ -18,5 +19,10 @@ extension AccountRouter: AccountRoutingLogic {
     func routeToWithdrawScene(userId: String, token: String) {
         let withdrawViewController = WithdrawConfigurator.resolve(userId: userId, token: token)
         viewController?.navigationController?.pushViewController(withdrawViewController, animated: true)
+    }
+    
+    func routeToExtractScene(userId: String, token: String) {
+        let extractViewController = ExtractConfigurator.resolve(userId: userId, token: token)
+        viewController?.navigationController?.pushViewController(extractViewController, animated: true)
     }
 }

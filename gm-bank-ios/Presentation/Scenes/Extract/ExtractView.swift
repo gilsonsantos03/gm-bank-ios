@@ -16,6 +16,7 @@ final class ExtractView: UIView {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(TransactionCell.self, forCellReuseIdentifier: TransactionCell.identifier)
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        tableView.backgroundColor = .black
         return tableView
     }()
 
@@ -33,7 +34,7 @@ final class ExtractView: UIView {
     // MARK: - Constrains
 
     private func setup() {
-        self.backgroundColor = .white
+        self.backgroundColor = .black
         addSubview(tableView)
         constrainTableView()
     }
@@ -58,4 +59,3 @@ extension ExtractView: ExtractViewProtocol {
         tableView.reloadData()
     }
 }
-
