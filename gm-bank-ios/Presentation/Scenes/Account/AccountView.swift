@@ -4,6 +4,7 @@ import UIKit
 protocol AccountViewDelegate: AnyObject {
     func didTapOnDepositButton()
     func didTapOnWithdrawButton()
+    func didTapOnExtractButton()
 }
 
 protocol AccountViewProtocol: UIView {
@@ -48,6 +49,16 @@ final class AccountView: UIView {
         return button
     }()
     
+    private lazy var extractButton: UIButton = {
+        let button = UIButton()
+        button.layer.cornerRadius = 6
+        button.backgroundColor = .white
+        button.setTitle("Extrato", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.addTarget(self, action: #selector(didTapOnExtractButton), for: .touchUpInside)
+        return button
+    }()
+    
     private let buttonStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
@@ -78,6 +89,10 @@ final class AccountView: UIView {
         delegate?.didTapOnWithdrawButton()
     }
     
+    @objc func didTapOnExtractButton() {
+        delegate?.didTapOnExtractButton()
+    }
+    
     // MARK: - Constrains
 
     private func setup() {
@@ -101,13 +116,16 @@ final class AccountView: UIView {
         addSubview(buttonStack)
         buttonStack.addArrangedSubview(depositButton)
         buttonStack.addArrangedSubview(withdrawButton)
-        constrain(buttonStack, balanceLabel, depositButton, withdrawButton) { stack, label, depositButton, withdrawButton in
+        buttonStack.addArrangedSubview(extractButton)
+        constrain(buttonStack, balanceLabel, depositButton, withdrawButton, extractButton) { stack, label, depositButton, withdrawButton, extractButton in
             stack.top == label.bottom + 20
             stack.centerX == label.centerX
             depositButton.height == 50
-            withdrawButton.height == 50
             depositButton.width == 100
+            withdrawButton.height == 50
             withdrawButton.width == 100
+            extractButton.height == 50
+            extractButton.width == 100
         }
     }
 }

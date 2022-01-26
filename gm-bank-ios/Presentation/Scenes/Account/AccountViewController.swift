@@ -77,4 +77,8 @@ extension AccountViewController: AccountViewDelegate {
     func didTapOnWithdrawButton() {
         interactor.routeToWithdrawScene(request: .init())
     }
+    
+    func didTapOnExtractButton() {
+        print("extract")
+    }
 }

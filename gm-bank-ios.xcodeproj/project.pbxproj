@@ -63,6 +63,15 @@
 		4435A10627A1C46500EF6EAD /* WithdrawModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A10527A1C46500EF6EAD /* WithdrawModels.swift */; };
 		4435A10827A1C77300EF6EAD /* WithdrawUserMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A10727A1C77300EF6EAD /* WithdrawUserMoney.swift */; };
 		4435A10A27A1C87E00EF6EAD /* WithdrawUserMoneyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A10927A1C87E00EF6EAD /* WithdrawUserMoneyRequest.swift */; };
+		4435A10C27A1CC1100EF6EAD /* Extract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A10B27A1CC1100EF6EAD /* Extract.swift */; };
+		4435A10F27A1CC8600EF6EAD /* ExtractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A10E27A1CC8600EF6EAD /* ExtractViewController.swift */; };
+		4435A11127A1CC9000EF6EAD /* ExtractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A11027A1CC9000EF6EAD /* ExtractView.swift */; };
+		4435A11327A1CC9700EF6EAD /* ExtractPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A11227A1CC9700EF6EAD /* ExtractPresenter.swift */; };
+		4435A11527A1CC9F00EF6EAD /* ExtractInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A11427A1CC9F00EF6EAD /* ExtractInteractor.swift */; };
+		4435A11727A1CCA800EF6EAD /* ExtractModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A11627A1CCA800EF6EAD /* ExtractModels.swift */; };
+		4435A11927A1CCAF00EF6EAD /* ExtractRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A11827A1CCAF00EF6EAD /* ExtractRouter.swift */; };
+		4435A11B27A1CCC700EF6EAD /* ExtractConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A11A27A1CCC700EF6EAD /* ExtractConfigurator.swift */; };
+		4435A12027A1CCF800EF6EAD /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A11F27A1CCF800EF6EAD /* TransactionCell.swift */; };
 		44B5217127A0666E00B57BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217027A0666E00B57BC5 /* AppDelegate.swift */; };
 		44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217227A0666E00B57BC5 /* SceneDelegate.swift */; };
 		44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217427A0666E00B57BC5 /* ViewController.swift */; };
@@ -131,6 +140,15 @@
 		4435A10527A1C46500EF6EAD /* WithdrawModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawModels.swift; sourceTree = "<group>"; };
 		4435A10727A1C77300EF6EAD /* WithdrawUserMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawUserMoney.swift; sourceTree = "<group>"; };
 		4435A10927A1C87E00EF6EAD /* WithdrawUserMoneyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawUserMoneyRequest.swift; sourceTree = "<group>"; };
+		4435A10B27A1CC1100EF6EAD /* Extract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extract.swift; sourceTree = "<group>"; };
+		4435A10E27A1CC8600EF6EAD /* ExtractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractViewController.swift; sourceTree = "<group>"; };
+		4435A11027A1CC9000EF6EAD /* ExtractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractView.swift; sourceTree = "<group>"; };
+		4435A11227A1CC9700EF6EAD /* ExtractPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractPresenter.swift; sourceTree = "<group>"; };
+		4435A11427A1CC9F00EF6EAD /* ExtractInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractInteractor.swift; sourceTree = "<group>"; };
+		4435A11627A1CCA800EF6EAD /* ExtractModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractModels.swift; sourceTree = "<group>"; };
+		4435A11827A1CCAF00EF6EAD /* ExtractRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractRouter.swift; sourceTree = "<group>"; };
+		4435A11A27A1CCC700EF6EAD /* ExtractConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractConfigurator.swift; sourceTree = "<group>"; };
+		4435A11F27A1CCF800EF6EAD /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		44B5216D27A0666E00B57BC5 /* gm-bank-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gm-bank-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B5217027A0666E00B57BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44B5217227A0666E00B57BC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +183,7 @@
 		4435A08827A072C000EF6EAD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4435A10D27A1CC7600EF6EAD /* Extract */,
 				4435A0F827A1C3FE00EF6EAD /* Withdraw */,
 				4435A0E327A1A86D00EF6EAD /* Deposit */,
 				4435A0CE27A0D6F700EF6EAD /* Account */,
@@ -261,6 +280,7 @@
 				4435A0B427A0930500EF6EAD /* User.swift */,
 				4435A0DD27A0E05400EF6EAD /* UserBalance.swift */,
 				4435A0F627A1B58C00EF6EAD /* AccountMovimentation.swift */,
+				4435A10B27A1CC1100EF6EAD /* Extract.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -331,6 +351,29 @@
 				4435A10527A1C46500EF6EAD /* WithdrawModels.swift */,
 			);
 			path = Withdraw;
+			sourceTree = "<group>";
+		};
+		4435A10D27A1CC7600EF6EAD /* Extract */ = {
+			isa = PBXGroup;
+			children = (
+				4435A11E27A1CCE500EF6EAD /* Cells */,
+				4435A10E27A1CC8600EF6EAD /* ExtractViewController.swift */,
+				4435A11027A1CC9000EF6EAD /* ExtractView.swift */,
+				4435A11227A1CC9700EF6EAD /* ExtractPresenter.swift */,
+				4435A11427A1CC9F00EF6EAD /* ExtractInteractor.swift */,
+				4435A11627A1CCA800EF6EAD /* ExtractModels.swift */,
+				4435A11827A1CCAF00EF6EAD /* ExtractRouter.swift */,
+				4435A11A27A1CCC700EF6EAD /* ExtractConfigurator.swift */,
+			);
+			path = Extract;
+			sourceTree = "<group>";
+		};
+		4435A11E27A1CCE500EF6EAD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4435A11F27A1CCF800EF6EAD /* TransactionCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		44B5216427A0666E00B57BC5 = {
@@ -504,12 +547,14 @@
 			files = (
 				4435A0C527A0B5DB00EF6EAD /* LoginRouter.swift in Sources */,
 				4435A09627A0731A00EF6EAD /* SignUpRouter.swift in Sources */,
+				4435A12027A1CCF800EF6EAD /* TransactionCell.swift in Sources */,
 				4435A0D027A0D70500EF6EAD /* AccountViewController.swift in Sources */,
 				4435A0EF27A1A8F100EF6EAD /* DepositConfigurator.swift in Sources */,
 				44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */,
 				4435A0AE27A0928600EF6EAD /* UserRepository.swift in Sources */,
 				4435A0DC27A0D76A00EF6EAD /* AccountRouter.swift in Sources */,
 				4435A0C127A0B5CE00EF6EAD /* LoginInteractor.swift in Sources */,
+				4435A11127A1CC9000EF6EAD /* ExtractView.swift in Sources */,
 				4435A0D827A0D72500EF6EAD /* AccountModels.swift in Sources */,
 				4435A0A127A0920100EF6EAD /* URLRequestBuilder.swift in Sources */,
 				4435A0CB27A0BA6200EF6EAD /* LoginUser.swift in Sources */,
@@ -540,7 +585,11 @@
 				4435A10027A1C45000EF6EAD /* WithdrawRouter.swift in Sources */,
 				4435A0C727A0B5E500EF6EAD /* LoginModels.swift in Sources */,
 				4435A0F527A1B31100EF6EAD /* DepositUserMoneyRequest.swift in Sources */,
+				4435A10F27A1CC8600EF6EAD /* ExtractViewController.swift in Sources */,
+				4435A11927A1CCAF00EF6EAD /* ExtractRouter.swift in Sources */,
+				4435A11527A1CC9F00EF6EAD /* ExtractInteractor.swift in Sources */,
 				4435A0D227A0D70D00EF6EAD /* AccountInteractor.swift in Sources */,
+				4435A11B27A1CCC700EF6EAD /* ExtractConfigurator.swift in Sources */,
 				4435A08C27A072F100EF6EAD /* SignUpViewController.swift in Sources */,
 				4435A0DA27A0D76100EF6EAD /* AccountView.swift in Sources */,
 				4435A0A527A0922C00EF6EAD /* HTTPMethod.swift in Sources */,
@@ -549,6 +598,7 @@
 				4435A0E927A1A8CA00EF6EAD /* DepositInteractor.swift in Sources */,
 				4435A0FE27A1C44800EF6EAD /* WithdrawInteractor.swift in Sources */,
 				4435A10627A1C46500EF6EAD /* WithdrawModels.swift in Sources */,
+				4435A10C27A1CC1100EF6EAD /* Extract.swift in Sources */,
 				4435A0B827A0935C00EF6EAD /* RegisterUser.swift in Sources */,
 				4435A0A727A0923D00EF6EAD /* ParameterEncoding.swift in Sources */,
 				4435A09227A0730800EF6EAD /* SignUpInteractor.swift in Sources */,
@@ -558,9 +608,11 @@
 				4435A09F27A091EA00EF6EAD /* NetworkService.swift in Sources */,
 				4435A0DE27A0E05400EF6EAD /* UserBalance.swift in Sources */,
 				4435A10227A1C45600EF6EAD /* WithdrawView.swift in Sources */,
+				4435A11327A1CC9700EF6EAD /* ExtractPresenter.swift in Sources */,
 				44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */,
 				4435A0A327A0921900EF6EAD /* URLRequestBuilder+Extension.swift in Sources */,
 				4435A0ED27A1A8E800EF6EAD /* DepositView.swift in Sources */,
+				4435A11727A1CCA800EF6EAD /* ExtractModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
