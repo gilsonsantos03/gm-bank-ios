@@ -115,7 +115,7 @@ final class SignUpView: UIView, SignUpViewProtocol {
         addSubview(nameTextView)
         constrain(nameTextView, self) { textView, view in
             textView.leading == view.leading + 16
-            textView.top == view.top + 100
+            textView.top == view.top + 300
             textView.trailing == view.trailing - 16
             textView.height == 50
         }

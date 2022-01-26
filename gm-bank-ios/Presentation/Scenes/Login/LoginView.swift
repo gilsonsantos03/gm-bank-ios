@@ -47,7 +47,7 @@ final class LoginView: UIView, LoginViewProtocol {
         button.backgroundColor = .white
         button.setTitle("Logar", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.addTarget(self, action: #selector(didTapSubmitButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapOnLoginButton), for: .touchUpInside)
         return button
     }()
     
@@ -64,7 +64,7 @@ final class LoginView: UIView, LoginViewProtocol {
     
     // MARK: - Helpers
     
-    @objc func didTapSubmitButton() {
+    @objc func didTapOnLoginButton() {
         delegate?.didTapOnButton(email: emailTextView.text ?? "", password: passwordTextView.text ?? "")
     }
     
@@ -84,7 +84,7 @@ final class LoginView: UIView, LoginViewProtocol {
     private func constrainEmailTextView() {
         addSubview(emailTextView)
         constrain(emailTextView, self) { emailTextView, view in
-            emailTextView.top == view.top + 100
+            emailTextView.top == view.top + 300
             emailTextView.leading == view.leading + 16
             emailTextView.trailing == view.trailing - 16
             emailTextView.height == 50
