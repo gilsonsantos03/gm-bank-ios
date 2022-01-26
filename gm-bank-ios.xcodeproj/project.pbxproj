@@ -44,6 +44,13 @@
 		4435A0DE27A0E05400EF6EAD /* UserBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0DD27A0E05400EF6EAD /* UserBalance.swift */; };
 		4435A0E027A0E0B200EF6EAD /* GetUserBalanceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0DF27A0E0B200EF6EAD /* GetUserBalanceRequest.swift */; };
 		4435A0E227A0E9C000EF6EAD /* GetUserBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0E127A0E9C000EF6EAD /* GetUserBalance.swift */; };
+		4435A0E527A1A8B000EF6EAD /* DepositViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0E427A1A8B000EF6EAD /* DepositViewController.swift */; };
+		4435A0E727A1A8C200EF6EAD /* DepositPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0E627A1A8C200EF6EAD /* DepositPresenter.swift */; };
+		4435A0E927A1A8CA00EF6EAD /* DepositInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0E827A1A8CA00EF6EAD /* DepositInteractor.swift */; };
+		4435A0EB27A1A8DA00EF6EAD /* DepositRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0EA27A1A8DA00EF6EAD /* DepositRouter.swift */; };
+		4435A0ED27A1A8E800EF6EAD /* DepositView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0EC27A1A8E800EF6EAD /* DepositView.swift */; };
+		4435A0EF27A1A8F100EF6EAD /* DepositConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0EE27A1A8F100EF6EAD /* DepositConfigurator.swift */; };
+		4435A0F127A1A8F900EF6EAD /* DepositModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0F027A1A8F900EF6EAD /* DepositModels.swift */; };
 		44B5217127A0666E00B57BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217027A0666E00B57BC5 /* AppDelegate.swift */; };
 		44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217227A0666E00B57BC5 /* SceneDelegate.swift */; };
 		44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217427A0666E00B57BC5 /* ViewController.swift */; };
@@ -93,6 +100,13 @@
 		4435A0DD27A0E05400EF6EAD /* UserBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBalance.swift; sourceTree = "<group>"; };
 		4435A0DF27A0E0B200EF6EAD /* GetUserBalanceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserBalanceRequest.swift; sourceTree = "<group>"; };
 		4435A0E127A0E9C000EF6EAD /* GetUserBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserBalance.swift; sourceTree = "<group>"; };
+		4435A0E427A1A8B000EF6EAD /* DepositViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositViewController.swift; sourceTree = "<group>"; };
+		4435A0E627A1A8C200EF6EAD /* DepositPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositPresenter.swift; sourceTree = "<group>"; };
+		4435A0E827A1A8CA00EF6EAD /* DepositInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositInteractor.swift; sourceTree = "<group>"; };
+		4435A0EA27A1A8DA00EF6EAD /* DepositRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositRouter.swift; sourceTree = "<group>"; };
+		4435A0EC27A1A8E800EF6EAD /* DepositView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositView.swift; sourceTree = "<group>"; };
+		4435A0EE27A1A8F100EF6EAD /* DepositConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositConfigurator.swift; sourceTree = "<group>"; };
+		4435A0F027A1A8F900EF6EAD /* DepositModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositModels.swift; sourceTree = "<group>"; };
 		44B5216D27A0666E00B57BC5 /* gm-bank-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gm-bank-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B5217027A0666E00B57BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44B5217227A0666E00B57BC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +141,7 @@
 		4435A08827A072C000EF6EAD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4435A0E327A1A86D00EF6EAD /* Deposit */,
 				4435A0CE27A0D6F700EF6EAD /* Account */,
 				4435A0B927A0B54200EF6EAD /* Login */,
 				4435A08927A072C800EF6EAD /* SignUp */,
@@ -258,6 +273,20 @@
 				4435A0D927A0D76100EF6EAD /* AccountView.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		4435A0E327A1A86D00EF6EAD /* Deposit */ = {
+			isa = PBXGroup;
+			children = (
+				4435A0E427A1A8B000EF6EAD /* DepositViewController.swift */,
+				4435A0E627A1A8C200EF6EAD /* DepositPresenter.swift */,
+				4435A0E827A1A8CA00EF6EAD /* DepositInteractor.swift */,
+				4435A0EA27A1A8DA00EF6EAD /* DepositRouter.swift */,
+				4435A0EC27A1A8E800EF6EAD /* DepositView.swift */,
+				4435A0EE27A1A8F100EF6EAD /* DepositConfigurator.swift */,
+				4435A0F027A1A8F900EF6EAD /* DepositModels.swift */,
+			);
+			path = Deposit;
 			sourceTree = "<group>";
 		};
 		44B5216427A0666E00B57BC5 = {
@@ -432,6 +461,7 @@
 				4435A0C527A0B5DB00EF6EAD /* LoginRouter.swift in Sources */,
 				4435A09627A0731A00EF6EAD /* SignUpRouter.swift in Sources */,
 				4435A0D027A0D70500EF6EAD /* AccountViewController.swift in Sources */,
+				4435A0EF27A1A8F100EF6EAD /* DepositConfigurator.swift in Sources */,
 				44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */,
 				4435A0AE27A0928600EF6EAD /* UserRepository.swift in Sources */,
 				4435A0DC27A0D76A00EF6EAD /* AccountRouter.swift in Sources */,
@@ -441,17 +471,21 @@
 				4435A0CB27A0BA6200EF6EAD /* LoginUser.swift in Sources */,
 				4435A0E027A0E0B200EF6EAD /* GetUserBalanceRequest.swift in Sources */,
 				4435A08E27A072F900EF6EAD /* SignUpView.swift in Sources */,
+				4435A0E527A1A8B000EF6EAD /* DepositViewController.swift in Sources */,
 				4435A0E227A0E9C000EF6EAD /* GetUserBalance.swift in Sources */,
 				4435A09827A0732000EF6EAD /* SignUpModels.swift in Sources */,
 				4435A0B227A092D300EF6EAD /* UserRepositoryInterface.swift in Sources */,
 				4435A0D627A0D71900EF6EAD /* AccountPresenter.swift in Sources */,
+				4435A0E727A1A8C200EF6EAD /* DepositPresenter.swift in Sources */,
 				4435A09027A072FF00EF6EAD /* SignUpConfigurator.swift in Sources */,
+				4435A0EB27A1A8DA00EF6EAD /* DepositRouter.swift in Sources */,
 				4435A0BD27A0B5BE00EF6EAD /* LoginView.swift in Sources */,
 				4435A0B527A0930500EF6EAD /* User.swift in Sources */,
 				44B5217127A0666E00B57BC5 /* AppDelegate.swift in Sources */,
 				4435A0BB27A0B5B600EF6EAD /* LoginViewController.swift in Sources */,
 				4435A0BF27A0B5C700EF6EAD /* LoginConfigurator.swift in Sources */,
 				4435A0C927A0BA3400EF6EAD /* LoginUserRequest.swift in Sources */,
+				4435A0F127A1A8F900EF6EAD /* DepositModels.swift in Sources */,
 				4435A0D427A0D71300EF6EAD /* AccountConfigurator.swift in Sources */,
 				4435A0C727A0B5E500EF6EAD /* LoginModels.swift in Sources */,
 				4435A0D227A0D70D00EF6EAD /* AccountInteractor.swift in Sources */,
@@ -460,6 +494,7 @@
 				4435A0A527A0922C00EF6EAD /* HTTPMethod.swift in Sources */,
 				4435A0C327A0B5D500EF6EAD /* LoginPresenter.swift in Sources */,
 				4435A09C27A091C500EF6EAD /* CustomError.swift in Sources */,
+				4435A0E927A1A8CA00EF6EAD /* DepositInteractor.swift in Sources */,
 				4435A0B827A0935C00EF6EAD /* RegisterUser.swift in Sources */,
 				4435A0A727A0923D00EF6EAD /* ParameterEncoding.swift in Sources */,
 				4435A09227A0730800EF6EAD /* SignUpInteractor.swift in Sources */,
@@ -469,6 +504,7 @@
 				4435A0DE27A0E05400EF6EAD /* UserBalance.swift in Sources */,
 				44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */,
 				4435A0A327A0921900EF6EAD /* URLRequestBuilder+Extension.swift in Sources */,
+				4435A0ED27A1A8E800EF6EAD /* DepositView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,7 @@ import UIKit
 
 protocol AccountBusinessLogic: AnyObject {
     func getUserBalance(request: AccountModels.GetUserBalance.Request)
+    func routeToDepositScene(request: AccountModels.RouteToDepositScene.Request)
 }
 
 final class AccountInteractor {
@@ -28,5 +29,9 @@ extension AccountInteractor: AccountBusinessLogic {
                 print("ERROR: \(error)")
             }
         }
+    }
+    
+    func routeToDepositScene(request: AccountModels.RouteToDepositScene.Request) {
+        presenter.presentDepositScene(response: .init(userId: userId))
     }
 }

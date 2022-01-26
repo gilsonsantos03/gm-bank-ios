@@ -13,5 +13,18 @@ enum AccountModels {
             let userBalance: UserBalance
         }
     }
+    
+    enum RouteToDepositScene {
+        struct Request {}
+        
+        struct Response {
+            let userId: String
+        }
+        
+        struct ViewModel {
+            let userId: String
+        }
+
+    }
 }
 

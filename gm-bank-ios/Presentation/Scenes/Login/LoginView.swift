@@ -15,30 +15,30 @@ final class LoginView: UIView, LoginViewProtocol {
     
     // MARK: - Properties
     
-    private lazy var emailTextView: UITextField = {
-        let textView = UITextField()
-        textView.layer.cornerRadius = 6
-        textView.layer.borderWidth = 1.5
-        textView.backgroundColor = .white
-        textView.layer.borderColor = UIColor.gray.cgColor
-        textView.textColor = .black
-        textView.font = .systemFont(ofSize: 16)
-        textView.autocorrectionType = .no
-        textView.placeholder = "Insira seu email"
-        return textView
+    private lazy var emailTextField: UITextField = {
+        let textField = UITextField()
+        textField.layer.cornerRadius = 6
+        textField.layer.borderWidth = 1.5
+        textField.backgroundColor = .white
+        textField.layer.borderColor = UIColor.gray.cgColor
+        textField.textColor = .black
+        textField.font = .systemFont(ofSize: 16)
+        textField.autocorrectionType = .no
+        textField.placeholder = "Insira seu email"
+        return textField
     }()
     
-    private lazy var passwordTextView: UITextField = {
-        let textView = UITextField()
-        textView.layer.cornerRadius = 6
-        textView.layer.borderWidth = 1.5
-        textView.backgroundColor = .white
-        textView.layer.borderColor = UIColor.gray.cgColor
-        textView.textColor = .black
-        textView.font = .systemFont(ofSize: 16)
-        textView.autocorrectionType = .no
-        textView.placeholder = "Insira sua senha"
-        return textView
+    private lazy var passwordTextField: UITextField = {
+        let textField = UITextField()
+        textField.layer.cornerRadius = 6
+        textField.layer.borderWidth = 1.5
+        textField.backgroundColor = .white
+        textField.layer.borderColor = UIColor.gray.cgColor
+        textField.textColor = .black
+        textField.font = .systemFont(ofSize: 16)
+        textField.autocorrectionType = .no
+        textField.placeholder = "Insira sua senha"
+        return textField
     }()
     
     private lazy var button: UIButton = {
@@ -65,7 +65,7 @@ final class LoginView: UIView, LoginViewProtocol {
     // MARK: - Helpers
     
     @objc func didTapOnLoginButton() {
-        delegate?.didTapOnButton(email: emailTextView.text ?? "", password: passwordTextView.text ?? "")
+        delegate?.didTapOnButton(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
     }
     
     // MARK: - Constrains
@@ -76,37 +76,37 @@ final class LoginView: UIView, LoginViewProtocol {
     }
     
     private func setupConstrains() {
-        constrainEmailTextView()
-        constrainPasswordTextView()
+        constrainEmailTextField()
+        constrainPasswordTextField()
         constrainButton()
     }
     
-    private func constrainEmailTextView() {
-        addSubview(emailTextView)
-        constrain(emailTextView, self) { emailTextView, view in
-            emailTextView.top == view.top + 300
-            emailTextView.leading == view.leading + 16
-            emailTextView.trailing == view.trailing - 16
-            emailTextView.height == 50
+    private func constrainEmailTextField() {
+        addSubview(emailTextField)
+        constrain(emailTextField, self) { emailTextField, view in
+            emailTextField.top == view.top + 300
+            emailTextField.leading == view.leading + 16
+            emailTextField.trailing == view.trailing - 16
+            emailTextField.height == 50
         }
     }
     
-    private func constrainPasswordTextView() {
-        addSubview(passwordTextView)
-        constrain(passwordTextView, emailTextView) { passwordTextView, emailTextView in
-            passwordTextView.top == emailTextView.bottom + 20
-            passwordTextView.leading == emailTextView.leading
-            passwordTextView.trailing == emailTextView.trailing
-            passwordTextView.height == 50
+    private func constrainPasswordTextField() {
+        addSubview(passwordTextField)
+        constrain(passwordTextField, emailTextField) { passwordTextField, emailTextField in
+            passwordTextField.top == emailTextField.bottom + 20
+            passwordTextField.leading == emailTextField.leading
+            passwordTextField.trailing == emailTextField.trailing
+            passwordTextField.height == 50
         }
     }
     
     private func constrainButton() {
         addSubview(button)
-        constrain(button, passwordTextView) { button, textView in
-            button.top == textView.bottom + 40
-            button.leading == textView.leading + 70
-            button.trailing == textView.trailing - 70
+        constrain(button, passwordTextField) { button, passwordTextField in
+            button.top == passwordTextField.bottom + 40
+            button.leading == passwordTextField.leading + 70
+            button.trailing == passwordTextField.trailing - 70
             button.height == 50
         }
     }

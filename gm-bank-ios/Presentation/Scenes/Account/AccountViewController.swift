@@ -2,6 +2,7 @@ import UIKit
 
 protocol AccountDisplayLogic: AnyObject {
     func displayUserBalance(viewModel: AccountModels.GetUserBalance.ViewModel)
+    func displayDepositScene(viewModel: AccountModels.RouteToDepositScene.ViewModel)
 }
 
 final class AccountViewController: UIViewController {
@@ -32,6 +33,7 @@ final class AccountViewController: UIViewController {
 
     override func loadView() {
         view = customView
+        customView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,11 +50,26 @@ final class AccountViewController: UIViewController {
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 26, weight: .bold)
         ]
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 }
 
 extension AccountViewController: AccountDisplayLogic {
     func displayUserBalance(viewModel: AccountModels.GetUserBalance.ViewModel) {
         customView.display(.init(balance: String(format: "%.1f", viewModel.userBalance.balance)))
+    }
+    
+    func displayDepositScene(viewModel: AccountModels.RouteToDepositScene.ViewModel) {
+        router.routeToDepositScene(userId: viewModel.userId)
+    }
+}
+
+extension AccountViewController: AccountViewDelegate {
+    func didTapOnDepositButton() {
+        interactor.routeToDepositScene(request: .init())
+    }
+    
+    func didTapOnWithdrawButton() {
+        print("withdraw")
     }
 }
