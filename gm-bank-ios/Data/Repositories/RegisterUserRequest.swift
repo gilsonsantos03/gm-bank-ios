@@ -24,4 +24,8 @@ enum RegisterUserRequest: URLRequestBuilder {
     var method: HTTPMethod {
         .post
     }
+    
+    var token: String? {
+        nil
+    }
 }

@@ -19,14 +19,10 @@ enum GetUserBalanceRequest: URLRequestBuilder {
         .get
     }
     
-    var headers: HTTPHeaders {
-        var header = HTTPHeaders()
-        
+    var token: String? {
         switch self {
         case .balance(_, let token):
-            header["Authorization"] = "Bearer \(token)"
+            return token
         }
-
-        return header
     }
 }

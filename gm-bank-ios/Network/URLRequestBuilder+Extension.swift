@@ -22,8 +22,13 @@ extension URLRequestBuilder {
 
     var headers: HTTPHeaders {
         var header = HTTPHeaders()
+        
         header["Content-Type"] = "application/json"
-
+        
+        if let token = token {
+            header["Authorization"] = "Bearer \(token)"
+        }
+       
         return header
     }
 

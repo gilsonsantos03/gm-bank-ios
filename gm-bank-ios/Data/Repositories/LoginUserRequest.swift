@@ -23,4 +23,8 @@ enum LoginUserRequest: URLRequestBuilder {
     var method: HTTPMethod {
         .post
     }
+    
+    var token: String? {
+        nil
+    }
 }

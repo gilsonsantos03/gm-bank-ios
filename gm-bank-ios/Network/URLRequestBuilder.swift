@@ -9,4 +9,5 @@ protocol URLRequestBuilder: URLRequestConvertible {
     var method: HTTPMethod { get }
     var encoding: ParameterEncoding { get }
     var urlRequest: URLRequest { get }
+    var token: String? { get }
 }
