@@ -1,10 +1,9 @@
 import Foundation
 
-enum SignUpModels {
+enum LoginModels {
     
-    enum RegisterUser {
+    enum LoginUser {
         struct Request {
-            let name: String
             let email: String
             let password: String
         }

@@ -20,11 +20,30 @@
 		4435A0A327A0921900EF6EAD /* URLRequestBuilder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0A227A0921900EF6EAD /* URLRequestBuilder+Extension.swift */; };
 		4435A0A527A0922C00EF6EAD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0A427A0922C00EF6EAD /* HTTPMethod.swift */; };
 		4435A0A727A0923D00EF6EAD /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0A627A0923D00EF6EAD /* ParameterEncoding.swift */; };
-		4435A0AC27A0926C00EF6EAD /* PostUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0AB27A0926C00EF6EAD /* PostUserRequest.swift */; };
+		4435A0AC27A0926C00EF6EAD /* RegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0AB27A0926C00EF6EAD /* RegisterUserRequest.swift */; };
 		4435A0AE27A0928600EF6EAD /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0AD27A0928600EF6EAD /* UserRepository.swift */; };
 		4435A0B227A092D300EF6EAD /* UserRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0B127A092D300EF6EAD /* UserRepositoryInterface.swift */; };
 		4435A0B527A0930500EF6EAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0B427A0930500EF6EAD /* User.swift */; };
 		4435A0B827A0935C00EF6EAD /* RegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0B727A0935C00EF6EAD /* RegisterUser.swift */; };
+		4435A0BB27A0B5B600EF6EAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0BA27A0B5B600EF6EAD /* LoginViewController.swift */; };
+		4435A0BD27A0B5BE00EF6EAD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0BC27A0B5BE00EF6EAD /* LoginView.swift */; };
+		4435A0BF27A0B5C700EF6EAD /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0BE27A0B5C700EF6EAD /* LoginConfigurator.swift */; };
+		4435A0C127A0B5CE00EF6EAD /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0C027A0B5CE00EF6EAD /* LoginInteractor.swift */; };
+		4435A0C327A0B5D500EF6EAD /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0C227A0B5D500EF6EAD /* LoginPresenter.swift */; };
+		4435A0C527A0B5DB00EF6EAD /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0C427A0B5DB00EF6EAD /* LoginRouter.swift */; };
+		4435A0C727A0B5E500EF6EAD /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0C627A0B5E500EF6EAD /* LoginModels.swift */; };
+		4435A0C927A0BA3400EF6EAD /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0C827A0BA3400EF6EAD /* LoginUserRequest.swift */; };
+		4435A0CB27A0BA6200EF6EAD /* LoginUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0CA27A0BA6200EF6EAD /* LoginUser.swift */; };
+		4435A0D027A0D70500EF6EAD /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0CF27A0D70500EF6EAD /* AccountViewController.swift */; };
+		4435A0D227A0D70D00EF6EAD /* AccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0D127A0D70D00EF6EAD /* AccountInteractor.swift */; };
+		4435A0D427A0D71300EF6EAD /* AccountConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0D327A0D71300EF6EAD /* AccountConfigurator.swift */; };
+		4435A0D627A0D71900EF6EAD /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0D527A0D71900EF6EAD /* AccountPresenter.swift */; };
+		4435A0D827A0D72500EF6EAD /* AccountModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0D727A0D72500EF6EAD /* AccountModels.swift */; };
+		4435A0DA27A0D76100EF6EAD /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0D927A0D76100EF6EAD /* AccountView.swift */; };
+		4435A0DC27A0D76A00EF6EAD /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0DB27A0D76A00EF6EAD /* AccountRouter.swift */; };
+		4435A0DE27A0E05400EF6EAD /* UserBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0DD27A0E05400EF6EAD /* UserBalance.swift */; };
+		4435A0E027A0E0B200EF6EAD /* GetUserBalanceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0DF27A0E0B200EF6EAD /* GetUserBalanceRequest.swift */; };
+		4435A0E227A0E9C000EF6EAD /* GetUserBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0E127A0E9C000EF6EAD /* GetUserBalance.swift */; };
 		44B5217127A0666E00B57BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217027A0666E00B57BC5 /* AppDelegate.swift */; };
 		44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217227A0666E00B57BC5 /* SceneDelegate.swift */; };
 		44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217427A0666E00B57BC5 /* ViewController.swift */; };
@@ -50,11 +69,30 @@
 		4435A0A227A0921900EF6EAD /* URLRequestBuilder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequestBuilder+Extension.swift"; sourceTree = "<group>"; };
 		4435A0A427A0922C00EF6EAD /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		4435A0A627A0923D00EF6EAD /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		4435A0AB27A0926C00EF6EAD /* PostUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserRequest.swift; sourceTree = "<group>"; };
+		4435A0AB27A0926C00EF6EAD /* RegisterUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRequest.swift; sourceTree = "<group>"; };
 		4435A0AD27A0928600EF6EAD /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		4435A0B127A092D300EF6EAD /* UserRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryInterface.swift; sourceTree = "<group>"; };
 		4435A0B427A0930500EF6EAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4435A0B727A0935C00EF6EAD /* RegisterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUser.swift; sourceTree = "<group>"; };
+		4435A0BA27A0B5B600EF6EAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4435A0BC27A0B5BE00EF6EAD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4435A0BE27A0B5C700EF6EAD /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		4435A0C027A0B5CE00EF6EAD /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		4435A0C227A0B5D500EF6EAD /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4435A0C427A0B5DB00EF6EAD /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		4435A0C627A0B5E500EF6EAD /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		4435A0C827A0BA3400EF6EAD /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
+		4435A0CA27A0BA6200EF6EAD /* LoginUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUser.swift; sourceTree = "<group>"; };
+		4435A0CF27A0D70500EF6EAD /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		4435A0D127A0D70D00EF6EAD /* AccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInteractor.swift; sourceTree = "<group>"; };
+		4435A0D327A0D71300EF6EAD /* AccountConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountConfigurator.swift; sourceTree = "<group>"; };
+		4435A0D527A0D71900EF6EAD /* AccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
+		4435A0D727A0D72500EF6EAD /* AccountModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModels.swift; sourceTree = "<group>"; };
+		4435A0D927A0D76100EF6EAD /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		4435A0DB27A0D76A00EF6EAD /* AccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
+		4435A0DD27A0E05400EF6EAD /* UserBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBalance.swift; sourceTree = "<group>"; };
+		4435A0DF27A0E0B200EF6EAD /* GetUserBalanceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserBalanceRequest.swift; sourceTree = "<group>"; };
+		4435A0E127A0E9C000EF6EAD /* GetUserBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserBalance.swift; sourceTree = "<group>"; };
 		44B5216D27A0666E00B57BC5 /* gm-bank-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gm-bank-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B5217027A0666E00B57BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44B5217227A0666E00B57BC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +127,8 @@
 		4435A08827A072C000EF6EAD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4435A0CE27A0D6F700EF6EAD /* Account */,
+				4435A0B927A0B54200EF6EAD /* Login */,
 				4435A08927A072C800EF6EAD /* SignUp */,
 			);
 			path = Scenes;
@@ -148,7 +188,9 @@
 		4435A0AA27A0925900EF6EAD /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				4435A0AB27A0926C00EF6EAD /* PostUserRequest.swift */,
+				4435A0AB27A0926C00EF6EAD /* RegisterUserRequest.swift */,
+				4435A0C827A0BA3400EF6EAD /* LoginUserRequest.swift */,
+				4435A0DF27A0E0B200EF6EAD /* GetUserBalanceRequest.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -175,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				4435A0B427A0930500EF6EAD /* User.swift */,
+				4435A0DD27A0E05400EF6EAD /* UserBalance.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -183,13 +226,44 @@
 			isa = PBXGroup;
 			children = (
 				4435A0B727A0935C00EF6EAD /* RegisterUser.swift */,
+				4435A0CA27A0BA6200EF6EAD /* LoginUser.swift */,
+				4435A0E127A0E9C000EF6EAD /* GetUserBalance.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		4435A0B927A0B54200EF6EAD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4435A0BA27A0B5B600EF6EAD /* LoginViewController.swift */,
+				4435A0BC27A0B5BE00EF6EAD /* LoginView.swift */,
+				4435A0BE27A0B5C700EF6EAD /* LoginConfigurator.swift */,
+				4435A0C227A0B5D500EF6EAD /* LoginPresenter.swift */,
+				4435A0C427A0B5DB00EF6EAD /* LoginRouter.swift */,
+				4435A0C627A0B5E500EF6EAD /* LoginModels.swift */,
+				4435A0C027A0B5CE00EF6EAD /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4435A0CE27A0D6F700EF6EAD /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				4435A0CF27A0D70500EF6EAD /* AccountViewController.swift */,
+				4435A0D127A0D70D00EF6EAD /* AccountInteractor.swift */,
+				4435A0D327A0D71300EF6EAD /* AccountConfigurator.swift */,
+				4435A0DB27A0D76A00EF6EAD /* AccountRouter.swift */,
+				4435A0D527A0D71900EF6EAD /* AccountPresenter.swift */,
+				4435A0D727A0D72500EF6EAD /* AccountModels.swift */,
+				4435A0D927A0D76100EF6EAD /* AccountView.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 		44B5216427A0666E00B57BC5 = {
 			isa = PBXGroup;
 			children = (
+				4435A0AF27A092B000EF6EAD /* Domain */,
 				44B5216F27A0666E00B57BC5 /* gm-bank-ios */,
 				44B5216E27A0666E00B57BC5 /* Products */,
 				AA30C9FAF7F0FB36395FABFF /* Pods */,
@@ -208,7 +282,6 @@
 		44B5216F27A0666E00B57BC5 /* gm-bank-ios */ = {
 			isa = PBXGroup;
 			children = (
-				4435A0AF27A092B000EF6EAD /* Domain */,
 				4435A0A827A0924D00EF6EAD /* Data */,
 				4435A09D27A091D300EF6EAD /* Network */,
 				4435A09A27A091B000EF6EAD /* Helpers */,
@@ -356,25 +429,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4435A0C527A0B5DB00EF6EAD /* LoginRouter.swift in Sources */,
 				4435A09627A0731A00EF6EAD /* SignUpRouter.swift in Sources */,
+				4435A0D027A0D70500EF6EAD /* AccountViewController.swift in Sources */,
 				44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */,
 				4435A0AE27A0928600EF6EAD /* UserRepository.swift in Sources */,
+				4435A0DC27A0D76A00EF6EAD /* AccountRouter.swift in Sources */,
+				4435A0C127A0B5CE00EF6EAD /* LoginInteractor.swift in Sources */,
+				4435A0D827A0D72500EF6EAD /* AccountModels.swift in Sources */,
 				4435A0A127A0920100EF6EAD /* URLRequestBuilder.swift in Sources */,
+				4435A0CB27A0BA6200EF6EAD /* LoginUser.swift in Sources */,
+				4435A0E027A0E0B200EF6EAD /* GetUserBalanceRequest.swift in Sources */,
 				4435A08E27A072F900EF6EAD /* SignUpView.swift in Sources */,
+				4435A0E227A0E9C000EF6EAD /* GetUserBalance.swift in Sources */,
 				4435A09827A0732000EF6EAD /* SignUpModels.swift in Sources */,
 				4435A0B227A092D300EF6EAD /* UserRepositoryInterface.swift in Sources */,
+				4435A0D627A0D71900EF6EAD /* AccountPresenter.swift in Sources */,
 				4435A09027A072FF00EF6EAD /* SignUpConfigurator.swift in Sources */,
+				4435A0BD27A0B5BE00EF6EAD /* LoginView.swift in Sources */,
 				4435A0B527A0930500EF6EAD /* User.swift in Sources */,
 				44B5217127A0666E00B57BC5 /* AppDelegate.swift in Sources */,
+				4435A0BB27A0B5B600EF6EAD /* LoginViewController.swift in Sources */,
+				4435A0BF27A0B5C700EF6EAD /* LoginConfigurator.swift in Sources */,
+				4435A0C927A0BA3400EF6EAD /* LoginUserRequest.swift in Sources */,
+				4435A0D427A0D71300EF6EAD /* AccountConfigurator.swift in Sources */,
+				4435A0C727A0B5E500EF6EAD /* LoginModels.swift in Sources */,
+				4435A0D227A0D70D00EF6EAD /* AccountInteractor.swift in Sources */,
 				4435A08C27A072F100EF6EAD /* SignUpViewController.swift in Sources */,
+				4435A0DA27A0D76100EF6EAD /* AccountView.swift in Sources */,
 				4435A0A527A0922C00EF6EAD /* HTTPMethod.swift in Sources */,
+				4435A0C327A0B5D500EF6EAD /* LoginPresenter.swift in Sources */,
 				4435A09C27A091C500EF6EAD /* CustomError.swift in Sources */,
 				4435A0B827A0935C00EF6EAD /* RegisterUser.swift in Sources */,
 				4435A0A727A0923D00EF6EAD /* ParameterEncoding.swift in Sources */,
 				4435A09227A0730800EF6EAD /* SignUpInteractor.swift in Sources */,
 				4435A09427A0730E00EF6EAD /* SignUpPresenter.swift in Sources */,
-				4435A0AC27A0926C00EF6EAD /* PostUserRequest.swift in Sources */,
+				4435A0AC27A0926C00EF6EAD /* RegisterUserRequest.swift in Sources */,
 				4435A09F27A091EA00EF6EAD /* NetworkService.swift in Sources */,
+				4435A0DE27A0E05400EF6EAD /* UserBalance.swift in Sources */,
 				44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */,
 				4435A0A327A0921900EF6EAD /* URLRequestBuilder+Extension.swift in Sources */,
 			);

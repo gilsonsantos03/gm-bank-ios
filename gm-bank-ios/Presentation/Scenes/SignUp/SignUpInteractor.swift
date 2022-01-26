@@ -6,20 +6,20 @@ protocol SignUpBusinessLogic: AnyObject {
 
 final class SignUpInteractor {
     private let presenter: SignUpPresentationLogic
-    private let registerUser: RegisterUserUseCase
+    private let registerUserUseCase: RegisterUserUseCase
 
-    init(presenter: SignUpPresentationLogic, registerUser: RegisterUserUseCase) {
+    init(presenter: SignUpPresentationLogic, registerUserUseCase: RegisterUserUseCase) {
         self.presenter = presenter
-        self.registerUser = registerUser
+        self.registerUserUseCase = registerUserUseCase
     }
 }
 
 extension SignUpInteractor: SignUpBusinessLogic {
     func registerUser(request: SignUpModels.RegisterUser.Request) {
-        registerUser.execute(name: request.name, email: request.email, password: request.password) { response in
+        registerUserUseCase.execute(name: request.name, email: request.email, password: request.password) { [weak self] response in
             switch response {
             case .success(let authentication):
-                print(authentication.user)
+                self?.presenter.presentUser(response: .init(authentication: authentication))
             case .failure(let error):
                 print("ERROR: \(error)")
             }

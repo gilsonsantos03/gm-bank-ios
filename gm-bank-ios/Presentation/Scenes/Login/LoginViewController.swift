@@ -1,19 +1,19 @@
 import UIKit
 
-protocol SignUpDisplayLogic: AnyObject {
-    func displayUser(viewModel: SignUpModels.RegisterUser.ViewModel)
+protocol LoginDisplayLogic: AnyObject {
+    func displayUser(viewModel: LoginModels.LoginUser.ViewModel)
 }
 
-final class SignUpController: UIViewController {
+final class LoginController: UIViewController {
         
-    private let customView: SignUpViewProtocol
-    private let router: SignUpRoutingLogic
-    private let interactor: SignUpBusinessLogic
+    private let customView: LoginViewProtocol
+    private let router: LoginRoutingLogic
+    private let interactor: LoginBusinessLogic
     
     init(
-        view: SignUpViewProtocol = SignUpView(),
-        router: SignUpRoutingLogic,
-        interactor: SignUpInteractor
+        view: LoginViewProtocol = LoginView(),
+        router: LoginRoutingLogic,
+        interactor: LoginInteractor
     ) {
         self.customView = view
         self.router = router
@@ -43,7 +43,7 @@ final class SignUpController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.tintColor = .white
-        navigationItem.title = "Cadastro"
+        navigationItem.title = "Login"
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 26, weight: .bold)
@@ -52,18 +52,14 @@ final class SignUpController: UIViewController {
     }
 }
 
-extension SignUpController: SignUpDisplayLogic {
-    func displayUser(viewModel: SignUpModels.RegisterUser.ViewModel) {
+extension LoginController: LoginDisplayLogic {
+    func displayUser(viewModel: LoginModels.LoginUser.ViewModel) {
         router.routeToAccountScene(authentication: viewModel.authentication)
     }
 }
 
-extension SignUpController: SignUpViewDelegate {
-    func didTapOnRegisterButton(name: String, email: String, password: String) {
-        interactor.registerUser(request: .init(name: name, email: email, password: password))
-    }
-    
-    func didTapOnLoginButton() {
-        router.routeToLoginScene()
+extension LoginController: LoginViewDelegate {
+    func didTapOnButton(email: String, password: String) {
+        interactor.loginUser(request: .init(email: email, password: password))
     }
 }

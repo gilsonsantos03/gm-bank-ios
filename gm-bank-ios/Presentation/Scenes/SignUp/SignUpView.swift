@@ -2,7 +2,8 @@ import Cartography
 import UIKit
 
 protocol SignUpViewDelegate: AnyObject {
-    func didTapOnButton(name: String, email: String, password: String)
+    func didTapOnRegisterButton(name: String, email: String, password: String)
+    func didTapOnLoginButton()
 }
 
 protocol SignUpViewProtocol: UIView {
@@ -54,13 +55,23 @@ final class SignUpView: UIView, SignUpViewProtocol {
         return textView
     }()
     
-    private lazy var button: UIButton = {
+    private lazy var registerButton: UIButton = {
         let button = UIButton()
         button.layer.cornerRadius = 6
         button.backgroundColor = .white
         button.setTitle("Cadastrar", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.addTarget(self, action: #selector(didTapSubmitButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapRegisterButton), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var loginButton: UIButton = {
+        let button = UIButton()
+        button.layer.cornerRadius = 6
+        button.backgroundColor = .white
+        button.setTitle("Já tenho conta", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
         return button
     }()
     
@@ -77,8 +88,12 @@ final class SignUpView: UIView, SignUpViewProtocol {
     
     // MARK: - Helpers
     
-    @objc func didTapSubmitButton() {
-        delegate?.didTapOnButton(name: nameTextView.text ?? "", email: emailTextView.text ?? "", password: passwordTextView.text ?? "")
+    @objc func didTapRegisterButton() {
+        delegate?.didTapOnRegisterButton(name: nameTextView.text ?? "", email: emailTextView.text ?? "", password: passwordTextView.text ?? "")
+    }
+    
+    @objc func didTapLoginButton() {
+        delegate?.didTapOnLoginButton()
     }
     
     // MARK: - Constrains
@@ -92,7 +107,8 @@ final class SignUpView: UIView, SignUpViewProtocol {
         constrainNameTextView()
         constrainEmailTextView()
         constrainPasswordTextView()
-        constrainButton()
+        constrainRegisterButton()
+        constrainLoginButton()
     }
     
     private func constrainNameTextView() {
@@ -125,12 +141,22 @@ final class SignUpView: UIView, SignUpViewProtocol {
         }
     }
     
-    private func constrainButton() {
-        addSubview(button)
-        constrain(button, passwordTextView) { button, textView in
+    private func constrainRegisterButton() {
+        addSubview(registerButton)
+        constrain(registerButton, passwordTextView) { button, textView in
             button.top == textView.bottom + 40
             button.leading == textView.leading + 70
             button.trailing == textView.trailing - 70
+            button.height == 50
+        }
+    }
+    
+    private func constrainLoginButton() {
+        addSubview(loginButton)
+        constrain(loginButton, registerButton) { button, registerButton in
+            button.top == registerButton.bottom + 20
+            button.leading == registerButton.leading
+            button.trailing == registerButton.trailing
             button.height == 50
         }
     }

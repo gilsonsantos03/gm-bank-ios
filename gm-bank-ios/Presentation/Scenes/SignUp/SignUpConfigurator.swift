@@ -7,7 +7,7 @@ public enum SignUpConfigurator {
         let presenter = SignUpPresenter()
         let userRepository = UserRepository()
         let registerUser = RegisterUser(repository: userRepository)
-        let interactor = SignUpInteractor(presenter: presenter, registerUser: registerUser)
+        let interactor = SignUpInteractor(presenter: presenter, registerUserUseCase: registerUser)
         let viewController = SignUpController(router: router, interactor: interactor)
 
         router.viewController = viewController
