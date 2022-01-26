@@ -1,19 +1,19 @@
 import UIKit
 
-protocol DepositDisplayLogic: AnyObject {
-    func displayUserMoney(viewModel: DepositModels.DepositUserMoney.ViewModel)
+protocol WithdrawDisplayLogic: AnyObject {
+    func displayUserMoney(viewModel: WithdrawModels.WithdrawUserMoney.ViewModel)
 }
 
-final class DepositViewController: UIViewController {
+final class WithdrawViewController: UIViewController {
     
-    private let customView: DepositViewProtocol
-    private let router: DepositRoutingLogic
-    private let interactor: DepositBusinessLogic
+    private let customView: WithdrawViewProtocol
+    private let router: WithdrawRoutingLogic
+    private let interactor: WithdrawBusinessLogic
     
     init(
-        view: DepositViewProtocol = DepositView(),
-        router: DepositRoutingLogic,
-        interactor: DepositBusinessLogic
+        view: WithdrawViewProtocol = WithdrawView(),
+        router: WithdrawRoutingLogic,
+        interactor: WithdrawBusinessLogic
     ) {
         self.customView = view
         self.router = router
@@ -43,7 +43,7 @@ final class DepositViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.tintColor = .white
-        navigationItem.title = "Depósito"
+        navigationItem.title = "Saque"
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 26, weight: .bold)
@@ -51,14 +51,14 @@ final class DepositViewController: UIViewController {
     }
 }
 
-extension DepositViewController: DepositDisplayLogic {
-    func displayUserMoney(viewModel: DepositModels.DepositUserMoney.ViewModel) {
+extension WithdrawViewController: WithdrawDisplayLogic {
+    func displayUserMoney(viewModel: WithdrawModels.WithdrawUserMoney.ViewModel) {
         router.routeToPreviousScene()
     }
 }
 
-extension DepositViewController: DepositViewDelegate {
-    func didTapOnDepositButton(depositAmount: Double) {
-        interactor.depositUserMoney(request: .init(depositAmount: depositAmount))
+extension WithdrawViewController: WithdrawViewDelegate {
+    func didTapOnWithdrawButton(withdrawAmount: Double) {
+        interactor.withdrawUserMoney(request: .init(withdrawAmount: withdrawAmount))
     }
 }

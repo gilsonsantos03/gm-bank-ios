@@ -25,6 +25,7 @@ final class SignUpView: UIView, SignUpViewProtocol {
         textField.textColor = .black
         textField.font = .systemFont(ofSize: 16)
         textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
         textField.placeholder = "Insira seu nome"
         return textField
     }()
@@ -38,6 +39,7 @@ final class SignUpView: UIView, SignUpViewProtocol {
         textField.textColor = .black
         textField.font = .systemFont(ofSize: 16)
         textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
         textField.placeholder = "Insira seu email"
         return textField
     }()
@@ -51,6 +53,7 @@ final class SignUpView: UIView, SignUpViewProtocol {
         textField.textColor = .black
         textField.font = .systemFont(ofSize: 16)
         textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
         textField.placeholder = "Insira sua senha (precisa ter mais de 6 dígitos)"
         return textField
     }()

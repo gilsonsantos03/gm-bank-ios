@@ -55,4 +55,30 @@ public final class UserRepository: UserRepositoryInterface {
             }
         }
     }
+    
+    public func depositUserMoney(userId: String, amount: Double, token: String, completion: @escaping (Result<AccountMovimentation, CustomError>) -> Void) {
+        let request = DepositUserMoneyRequest.deposit(userId: userId, amount: amount, token: token)
+        
+        network.request(request: request) { (result: Result<AccountMovimentation, CustomError>) in
+            switch result {
+            case .success(let deposit):
+                completion(.success(deposit))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    public func withdrawUserMoney(userId: String, amount: Double, token: String, completion: @escaping (Result<AccountMovimentation, CustomError>) -> Void) {
+        let request = WithdrawUserMoneyRequest.withdraw(userId: userId, amount: amount, token: token)
+        
+        network.request(request: request) { (result: Result<AccountMovimentation, CustomError>) in
+            switch result {
+            case .success(let deposit):
+                completion(.success(deposit))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }

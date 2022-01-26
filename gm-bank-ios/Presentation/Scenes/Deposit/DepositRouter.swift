@@ -1,9 +1,15 @@
 import UIKit
 
-protocol DepositRoutingLogic: AnyObject {}
+protocol DepositRoutingLogic: AnyObject {
+    func routeToPreviousScene()
+}
 
 final class DepositRouter {
     weak var viewController: (UIViewController & DepositDisplayLogic)?
 }
 
-extension DepositRouter: DepositRoutingLogic {}
+extension DepositRouter: DepositRoutingLogic {
+    func routeToPreviousScene() {
+        viewController?.navigationController?.popViewController(animated: true)
+    }
+}

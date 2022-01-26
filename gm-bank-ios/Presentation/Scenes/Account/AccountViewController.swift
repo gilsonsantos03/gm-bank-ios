@@ -3,6 +3,7 @@ import UIKit
 protocol AccountDisplayLogic: AnyObject {
     func displayUserBalance(viewModel: AccountModels.GetUserBalance.ViewModel)
     func displayDepositScene(viewModel: AccountModels.RouteToDepositScene.ViewModel)
+    func displayWithdrawScene(viewModel: AccountModels.RouteToDepositScene.ViewModel)
 }
 
 final class AccountViewController: UIViewController {
@@ -28,7 +29,6 @@ final class AccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        interactor.getUserBalance(request: .init())
     }
 
     override func loadView() {
@@ -39,6 +39,7 @@ final class AccountViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavigationBar()
+        interactor.getUserBalance(request: .init())
     }
 
     private func setupNavigationBar() {
@@ -60,7 +61,11 @@ extension AccountViewController: AccountDisplayLogic {
     }
     
     func displayDepositScene(viewModel: AccountModels.RouteToDepositScene.ViewModel) {
-        router.routeToDepositScene(userId: viewModel.userId)
+        router.routeToDepositScene(userId: viewModel.userId, token: viewModel.token)
+    }
+    
+    func displayWithdrawScene(viewModel: AccountModels.RouteToDepositScene.ViewModel) {
+        router.routeToWithdrawScene(userId: viewModel.userId, token: viewModel.token)
     }
 }
 
@@ -70,6 +75,6 @@ extension AccountViewController: AccountViewDelegate {
     }
     
     func didTapOnWithdrawButton() {
-        print("withdraw")
+        interactor.routeToWithdrawScene(request: .init())
     }
 }

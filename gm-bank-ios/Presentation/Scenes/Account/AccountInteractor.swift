@@ -3,6 +3,7 @@ import UIKit
 protocol AccountBusinessLogic: AnyObject {
     func getUserBalance(request: AccountModels.GetUserBalance.Request)
     func routeToDepositScene(request: AccountModels.RouteToDepositScene.Request)
+    func routeToWithdrawScene(request: AccountModels.RouteToDepositScene.Request)
 }
 
 final class AccountInteractor {
@@ -32,6 +33,10 @@ extension AccountInteractor: AccountBusinessLogic {
     }
     
     func routeToDepositScene(request: AccountModels.RouteToDepositScene.Request) {
-        presenter.presentDepositScene(response: .init(userId: userId))
+        presenter.presentDepositScene(response: .init(userId: userId, token: userToken))
+    }
+    
+    func routeToWithdrawScene(request: AccountModels.RouteToDepositScene.Request) {
+        presenter.presentWithdrawScene(response: .init(userId: userId, token: userToken))
     }
 }

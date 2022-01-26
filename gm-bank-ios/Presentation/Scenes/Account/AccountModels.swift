@@ -19,12 +19,26 @@ enum AccountModels {
         
         struct Response {
             let userId: String
+            let token: String
         }
         
         struct ViewModel {
             let userId: String
+            let token: String
         }
-
+    }
+    
+    enum RouteToWithdrawScene {
+        struct Request {}
+        
+        struct Response {
+            let userId: String
+            let token: String
+        }
+        
+        struct ViewModel {
+            let userId: String
+            let token: String
+        }
     }
 }
-

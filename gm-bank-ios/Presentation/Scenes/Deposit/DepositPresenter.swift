@@ -1,6 +1,7 @@
 import UIKit
 
 protocol DepositPresentationLogic: AnyObject {
+    func presentUserMoney(response: DepositModels.DepositUserMoney.Response)
 }
 
 final class DepositPresenter {
@@ -8,5 +9,7 @@ final class DepositPresenter {
 }
 
 extension DepositPresenter: DepositPresentationLogic {
-    
+    func presentUserMoney(response: DepositModels.DepositUserMoney.Response) {
+        view?.displayUserMoney(viewModel: .init())
+    }
 }

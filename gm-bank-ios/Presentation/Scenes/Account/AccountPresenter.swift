@@ -3,6 +3,7 @@ import UIKit
 protocol AccountPresentationLogic: AnyObject {
     func presentUserBalance(response: AccountModels.GetUserBalance.Response)
     func presentDepositScene(response: AccountModels.RouteToDepositScene.Response)
+    func presentWithdrawScene(response: AccountModels.RouteToDepositScene.Response)
 }
 
 final class AccountPresenter {
@@ -15,6 +16,10 @@ extension AccountPresenter: AccountPresentationLogic {
     }
     
     func presentDepositScene(response: AccountModels.RouteToDepositScene.Response) {
-        view?.displayDepositScene(viewModel: .init(userId: response.userId))
+        view?.displayDepositScene(viewModel: .init(userId: response.userId, token: response.token))
+    }
+    
+    func presentWithdrawScene(response: AccountModels.RouteToDepositScene.Response) {
+        view?.displayWithdrawScene(viewModel: .init(userId: response.userId, token: response.token))
     }
 }

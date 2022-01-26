@@ -24,6 +24,7 @@ final class LoginView: UIView, LoginViewProtocol {
         textField.textColor = .black
         textField.font = .systemFont(ofSize: 16)
         textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
         textField.placeholder = "Insira seu email"
         return textField
     }()
@@ -37,6 +38,7 @@ final class LoginView: UIView, LoginViewProtocol {
         textField.textColor = .black
         textField.font = .systemFont(ofSize: 16)
         textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
         textField.placeholder = "Insira sua senha"
         return textField
     }()

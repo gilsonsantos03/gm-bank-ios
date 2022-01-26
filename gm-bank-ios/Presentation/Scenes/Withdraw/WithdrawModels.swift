@@ -1,10 +1,10 @@
 import Foundation
 
-enum DepositModels {
+enum WithdrawModels {
     
-    enum DepositUserMoney {
+    enum WithdrawUserMoney {
         struct Request {
-            let depositAmount: Double
+            let withdrawAmount: Double
         }
         
         struct Response {}

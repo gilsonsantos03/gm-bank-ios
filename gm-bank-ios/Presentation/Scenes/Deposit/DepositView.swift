@@ -2,14 +2,14 @@ import Cartography
 import UIKit
 
 protocol DepositViewDelegate: AnyObject {
-    func didTapOnDepositButton()
+    func didTapOnDepositButton(depositAmount: Double)
 }
 
 protocol DepositViewProtocol: UIView {
     var delegate: DepositViewDelegate? { get set }
 }
 
-final class DepositView: UIView {
+final class DepositView: UIView, DepositViewProtocol {
     
     weak var delegate: DepositViewDelegate?
     
@@ -24,6 +24,7 @@ final class DepositView: UIView {
         textField.textColor = .black
         textField.font = .systemFont(ofSize: 16)
         textField.autocorrectionType = .no
+        textField.keyboardType = .decimalPad
         textField.placeholder = "Insira a quantidade a ser depositada"
         return textField
     }()
@@ -53,7 +54,9 @@ final class DepositView: UIView {
     // MARK: - Helpers
     
     @objc func didTapOnDepositButton() {
-        delegate?.didTapOnDepositButton()
+        let depositAmountText = depositTextField.text ?? ""
+        let depositAmount = NumberFormatter().number(from: depositAmountText)?.doubleValue
+        delegate?.didTapOnDepositButton(depositAmount: depositAmount ?? 0.0)
     }
     
     // MARK: - Constrains
@@ -87,8 +90,4 @@ final class DepositView: UIView {
             button.height == 50
         }
     }
-}
-
-extension DepositView: DepositViewProtocol {
-    
 }
