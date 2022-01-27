@@ -53,7 +53,12 @@ final class WithdrawViewController: UIViewController {
 
 extension WithdrawViewController: WithdrawDisplayLogic {
     func displayUserMoney(viewModel: WithdrawModels.WithdrawUserMoney.ViewModel) {
-        router.routeToPreviousScene()
+        switch viewModel {
+        case .success:
+            router.routeToPreviousScene()
+        case .failure(let error):
+            AlertError.showAlert(error: error, viewController: self)
+        }
     }
 }
 

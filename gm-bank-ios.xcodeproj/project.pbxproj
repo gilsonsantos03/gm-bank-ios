@@ -14,7 +14,7 @@
 		4435A09427A0730E00EF6EAD /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09327A0730E00EF6EAD /* SignUpPresenter.swift */; };
 		4435A09627A0731A00EF6EAD /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09527A0731A00EF6EAD /* SignUpRouter.swift */; };
 		4435A09827A0732000EF6EAD /* SignUpModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09727A0732000EF6EAD /* SignUpModels.swift */; };
-		4435A09C27A091C500EF6EAD /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09B27A091C500EF6EAD /* CustomError.swift */; };
+		4435A09C27A091C500EF6EAD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09B27A091C500EF6EAD /* NetworkError.swift */; };
 		4435A09F27A091EA00EF6EAD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A09E27A091EA00EF6EAD /* NetworkService.swift */; };
 		4435A0A127A0920100EF6EAD /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0A027A0920100EF6EAD /* URLRequestBuilder.swift */; };
 		4435A0A327A0921900EF6EAD /* URLRequestBuilder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A0A227A0921900EF6EAD /* URLRequestBuilder+Extension.swift */; };
@@ -74,6 +74,8 @@
 		4435A12027A1CCF800EF6EAD /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A11F27A1CCF800EF6EAD /* TransactionCell.swift */; };
 		4435A12227A1D0E500EF6EAD /* GetUserExtractRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A12127A1D0E500EF6EAD /* GetUserExtractRequest.swift */; };
 		4435A12427A1D19B00EF6EAD /* GetUserExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A12327A1D19B00EF6EAD /* GetUserExtract.swift */; };
+		4435A12627A1E5FB00EF6EAD /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A12527A1E5FB00EF6EAD /* UITextField+Extension.swift */; };
+		4435A12827A2E50C00EF6EAD /* AlertError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A12727A2E50C00EF6EAD /* AlertError.swift */; };
 		44B5217127A0666E00B57BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217027A0666E00B57BC5 /* AppDelegate.swift */; };
 		44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217227A0666E00B57BC5 /* SceneDelegate.swift */; };
 		44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217427A0666E00B57BC5 /* ViewController.swift */; };
@@ -93,7 +95,7 @@
 		4435A09327A0730E00EF6EAD /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		4435A09527A0731A00EF6EAD /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
 		4435A09727A0732000EF6EAD /* SignUpModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModels.swift; sourceTree = "<group>"; };
-		4435A09B27A091C500EF6EAD /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		4435A09B27A091C500EF6EAD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4435A09E27A091EA00EF6EAD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		4435A0A027A0920100EF6EAD /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		4435A0A227A0921900EF6EAD /* URLRequestBuilder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequestBuilder+Extension.swift"; sourceTree = "<group>"; };
@@ -153,6 +155,8 @@
 		4435A11F27A1CCF800EF6EAD /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		4435A12127A1D0E500EF6EAD /* GetUserExtractRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserExtractRequest.swift; sourceTree = "<group>"; };
 		4435A12327A1D19B00EF6EAD /* GetUserExtract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserExtract.swift; sourceTree = "<group>"; };
+		4435A12527A1E5FB00EF6EAD /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		4435A12727A2E50C00EF6EAD /* AlertError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertError.swift; sourceTree = "<group>"; };
 		44B5216D27A0666E00B57BC5 /* gm-bank-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gm-bank-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B5217027A0666E00B57BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44B5217227A0666E00B57BC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,7 +218,8 @@
 		4435A09A27A091B000EF6EAD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				4435A09B27A091C500EF6EAD /* CustomError.swift */,
+				4435A12527A1E5FB00EF6EAD /* UITextField+Extension.swift */,
+				4435A12727A2E50C00EF6EAD /* AlertError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 		4435A09D27A091D300EF6EAD /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4435A09B27A091C500EF6EAD /* NetworkError.swift */,
 				4435A09E27A091EA00EF6EAD /* NetworkService.swift */,
 				4435A0A027A0920100EF6EAD /* URLRequestBuilder.swift */,
 				4435A0A227A0921900EF6EAD /* URLRequestBuilder+Extension.swift */,
@@ -557,6 +563,7 @@
 				4435A12027A1CCF800EF6EAD /* TransactionCell.swift in Sources */,
 				4435A0D027A0D70500EF6EAD /* AccountViewController.swift in Sources */,
 				4435A0EF27A1A8F100EF6EAD /* DepositConfigurator.swift in Sources */,
+				4435A12627A1E5FB00EF6EAD /* UITextField+Extension.swift in Sources */,
 				44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */,
 				4435A0AE27A0928600EF6EAD /* UserRepository.swift in Sources */,
 				4435A0DC27A0D76A00EF6EAD /* AccountRouter.swift in Sources */,
@@ -602,8 +609,9 @@
 				4435A0DA27A0D76100EF6EAD /* AccountView.swift in Sources */,
 				4435A0A527A0922C00EF6EAD /* HTTPMethod.swift in Sources */,
 				4435A0C327A0B5D500EF6EAD /* LoginPresenter.swift in Sources */,
-				4435A09C27A091C500EF6EAD /* CustomError.swift in Sources */,
+				4435A09C27A091C500EF6EAD /* NetworkError.swift in Sources */,
 				4435A0E927A1A8CA00EF6EAD /* DepositInteractor.swift in Sources */,
+				4435A12827A2E50C00EF6EAD /* AlertError.swift in Sources */,
 				4435A0FE27A1C44800EF6EAD /* WithdrawInteractor.swift in Sources */,
 				4435A10627A1C46500EF6EAD /* WithdrawModels.swift in Sources */,
 				4435A10C27A1CC1100EF6EAD /* Extract.swift in Sources */,

@@ -13,7 +13,7 @@ final class AccountPresenter {
 
 extension AccountPresenter: AccountPresentationLogic {
     func presentUserBalance(response: AccountModels.GetUserBalance.Response) {
-        view?.displayUserBalance(viewModel: .init(userBalance: response.userBalance))
+        view?.displayUserBalance(viewModel: .init(ownerName: response.ownerName, userBalance: response.userBalance))
     }
     
     func presentDepositScene(response: AccountModels.RouteToDepositScene.Response) {

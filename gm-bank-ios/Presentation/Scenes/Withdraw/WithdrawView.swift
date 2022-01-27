@@ -25,6 +25,7 @@ final class WithdrawView: UIView, WithdrawViewProtocol {
         textField.font = .systemFont(ofSize: 16)
         textField.autocorrectionType = .no
         textField.keyboardType = .decimalPad
+        textField.setLeftPaddingPoints(4)
         textField.placeholder = "Insira a quantidade a ser sacada"
         return textField
     }()

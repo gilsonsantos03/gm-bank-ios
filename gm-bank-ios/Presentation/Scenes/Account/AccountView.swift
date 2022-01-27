@@ -17,10 +17,18 @@ final class AccountView: UIView {
     weak var delegate: AccountViewDelegate?
     
     struct ViewModel {
+        let owner: String
         let balance: String
     }
     
     // MARK: - Properties
+    
+    private lazy var ownerLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        label.textColor = .white
+        return label
+    }()
     
     private lazy var balanceLabel: UILabel = {
         let label = UILabel()
@@ -101,14 +109,23 @@ final class AccountView: UIView {
     }
     
     private func setupConstrains() {
+        constrainOwnerLabel()
         constrainBalanceLabel()
         constrainButtonStack()
     }
     
+    private func constrainOwnerLabel() {
+        addSubview(ownerLabel)
+        constrain(ownerLabel, self) { label, view in
+            label.center == view.center
+        }
+    }
+    
     private func constrainBalanceLabel() {
         addSubview(balanceLabel)
-        constrain(balanceLabel, self) { label, view in
-            label.center == view.center
+        constrain(balanceLabel, ownerLabel) { label, ownerLabel in
+            label.top == ownerLabel.bottom + 10
+            label.centerX == ownerLabel.centerX
         }
     }
     
@@ -132,6 +149,7 @@ final class AccountView: UIView {
 
 extension AccountView: AccountViewProtocol {
     func display(_ viewModel: AccountView.ViewModel) {
+        ownerLabel.text = "Titular: \(viewModel.owner)"
         balanceLabel.text = "Saldo: R$ \(viewModel.balance)"
     }
 }

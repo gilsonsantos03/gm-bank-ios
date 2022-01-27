@@ -58,7 +58,7 @@ final class AccountViewController: UIViewController {
 
 extension AccountViewController: AccountDisplayLogic {
     func displayUserBalance(viewModel: AccountModels.GetUserBalance.ViewModel) {
-        customView.display(.init(balance: String(format: "%.1f", viewModel.userBalance.balance)))
+        customView.display(.init(owner: viewModel.ownerName, balance: String(format: "%.1f", viewModel.userBalance.balance)))
     }
     
     func displayDepositScene(viewModel: AccountModels.RouteToDepositScene.ViewModel) {

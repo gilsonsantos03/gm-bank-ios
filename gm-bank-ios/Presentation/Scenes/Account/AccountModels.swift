@@ -6,10 +6,12 @@ enum AccountModels {
         struct Request {}
         
         struct Response {
+            let ownerName: String
             let userBalance: UserBalance
         }
         
         struct ViewModel {
+            let ownerName: String
             let userBalance: UserBalance
         }
     }

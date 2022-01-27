@@ -54,7 +54,12 @@ final class SignUpController: UIViewController {
 
 extension SignUpController: SignUpDisplayLogic {
     func displayUser(viewModel: SignUpModels.RegisterUser.ViewModel) {
-        router.routeToAccountScene(authentication: viewModel.authentication)
+        switch viewModel {
+        case .success(let authentication):
+            router.routeToAccountScene(authentication: authentication)
+        case .failure(let error):
+            AlertError.showAlert(error: error, viewController: self)
+        }
     }
 }
 
@@ -65,5 +70,9 @@ extension SignUpController: SignUpViewDelegate {
     
     func didTapOnLoginButton() {
         router.routeToLoginScene()
+    }
+    
+    func showAlert() {
+        
     }
 }

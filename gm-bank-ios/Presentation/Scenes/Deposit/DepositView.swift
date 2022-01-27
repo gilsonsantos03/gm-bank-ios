@@ -25,6 +25,7 @@ final class DepositView: UIView, DepositViewProtocol {
         textField.font = .systemFont(ofSize: 16)
         textField.autocorrectionType = .no
         textField.keyboardType = .decimalPad
+        textField.setLeftPaddingPoints(4)
         textField.placeholder = "Insira a quantidade a ser depositada"
         return textField
     }()

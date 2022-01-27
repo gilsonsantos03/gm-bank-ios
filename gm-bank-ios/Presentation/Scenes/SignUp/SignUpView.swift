@@ -4,6 +4,7 @@ import UIKit
 protocol SignUpViewDelegate: AnyObject {
     func didTapOnRegisterButton(name: String, email: String, password: String)
     func didTapOnLoginButton()
+    func showAlert()
 }
 
 protocol SignUpViewProtocol: UIView {
@@ -26,6 +27,7 @@ final class SignUpView: UIView, SignUpViewProtocol {
         textField.font = .systemFont(ofSize: 16)
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .none
+        textField.setLeftPaddingPoints(4)
         textField.placeholder = "Insira seu nome"
         return textField
     }()
@@ -40,6 +42,7 @@ final class SignUpView: UIView, SignUpViewProtocol {
         textField.font = .systemFont(ofSize: 16)
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .none
+        textField.setLeftPaddingPoints(4)
         textField.placeholder = "Insira seu email"
         return textField
     }()
@@ -54,6 +57,8 @@ final class SignUpView: UIView, SignUpViewProtocol {
         textField.font = .systemFont(ofSize: 16)
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .none
+        textField.isSecureTextEntry = true
+        textField.setLeftPaddingPoints(4)
         textField.placeholder = "Insira sua senha (precisa ter mais de 6 dígitos)"
         return textField
     }()

@@ -12,12 +12,14 @@ final class AccountInteractor {
     private let getUserBalanceUseCase: GetUserBalanceUseCase
     private let userId: String
     private let userToken: String
+    private let userName: String
 
-    init(presenter: AccountPresentationLogic, getUserBalanceUseCase: GetUserBalanceUseCase, userId: String, userToken: String) {
+    init(presenter: AccountPresentationLogic, getUserBalanceUseCase: GetUserBalanceUseCase, userId: String, userToken: String, userName: String) {
         self.presenter = presenter
         self.getUserBalanceUseCase = getUserBalanceUseCase
         self.userId = userId
         self.userToken = userToken
+        self.userName = userName
     }
 }
 
@@ -26,7 +28,7 @@ extension AccountInteractor: AccountBusinessLogic {
         getUserBalanceUseCase.execute(userId: userId, token: userToken) { [weak self] response in
             switch response {
             case .success(let userBalance):
-                self?.presenter.presentUserBalance(response: .init(userBalance: userBalance))
+                self?.presenter.presentUserBalance(response: .init(ownerName: self?.userName ?? "", userBalance: userBalance))
             case .failure(let error):
                 print("ERROR: \(error)")
             }

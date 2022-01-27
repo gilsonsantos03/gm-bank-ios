@@ -7,8 +7,14 @@ enum WithdrawModels {
             let withdrawAmount: Double
         }
         
-        struct Response {}
+        enum Response {
+            case success
+            case failure(String?)
+        }
         
-        struct ViewModel {}
+        enum ViewModel {
+            case success
+            case failure(String?)
+        }
     }
 }

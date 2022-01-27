@@ -23,9 +23,9 @@ extension WithdrawInteractor: WithdrawBusinessLogic {
         withdrawUserMoneyUseCase.execute(userId: userId, amount: request.withdrawAmount, token: userToken) { [weak self] response in
             switch response {
             case .success(_):
-                self?.presenter.presentUserMoney(response: .init())
+                self?.presenter.presentUserMoney(response: .success)
             case .failure(let error):
-                print("ERROR: \(error)")
+                self?.presenter.presentUserMoney(response: .failure(error.description))
             }
         }
     }

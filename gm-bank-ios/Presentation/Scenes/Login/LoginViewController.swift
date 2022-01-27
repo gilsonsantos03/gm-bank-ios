@@ -54,7 +54,12 @@ final class LoginController: UIViewController {
 
 extension LoginController: LoginDisplayLogic {
     func displayUser(viewModel: LoginModels.LoginUser.ViewModel) {
-        router.routeToAccountScene(authentication: viewModel.authentication)
+        switch viewModel {
+        case .success(let authentication):
+            router.routeToAccountScene(authentication: authentication)
+        case .failure(let error):
+            AlertError.showAlert(error: error, viewController: self)
+        }
     }
 }
 

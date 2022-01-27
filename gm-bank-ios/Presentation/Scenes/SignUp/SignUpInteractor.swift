@@ -19,9 +19,9 @@ extension SignUpInteractor: SignUpBusinessLogic {
         registerUserUseCase.execute(name: request.name, email: request.email, password: request.password) { [weak self] response in
             switch response {
             case .success(let authentication):
-                self?.presenter.presentUser(response: .init(authentication: authentication))
+                self?.presenter.presentUser(response: .success(authentication))
             case .failure(let error):
-                print("ERROR: \(error)")
+                self?.presenter.presentUser(response: .failure(error.description))
             }
         }
     }

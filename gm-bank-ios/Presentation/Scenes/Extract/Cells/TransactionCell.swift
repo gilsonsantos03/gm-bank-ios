@@ -99,7 +99,7 @@ final class TransactionCell: UITableViewCell {
 
 extension TransactionCell {
     func configure(with display: ViewModel) {
-        transactionType.text = "Tipo: \(display.action)"
+        transactionType.text = "Tipo: \(display.action.rawValue)"
         transactionDate.text = "Data: \(display.date)"
         transactionAmount.text = "R$ \(display.amount)"
     }

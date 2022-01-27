@@ -9,7 +9,8 @@ public enum AccountConfigurator {
         let getUserBalance = GetUserBalance(repository: userRepository)
         let userId = authentication.user.userId
         let userToken = authentication.token
-        let interactor = AccountInteractor(presenter: presenter, getUserBalanceUseCase: getUserBalance, userId: userId, userToken: userToken)
+        let userName = authentication.user.name
+        let interactor = AccountInteractor(presenter: presenter, getUserBalanceUseCase: getUserBalance, userId: userId, userToken: userToken, userName: userName)
         let viewController = AccountViewController(router: router, interactor: interactor)
 
         router.viewController = viewController

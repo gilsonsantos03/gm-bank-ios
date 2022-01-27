@@ -9,12 +9,14 @@ enum SignUpModels {
             let password: String
         }
         
-        struct Response {
-            let authentication: Authentication
+        enum Response {
+            case success(Authentication)
+            case failure(String?)
         }
         
-        struct ViewModel {
-            let authentication: Authentication
+        enum ViewModel {
+            case success(Authentication)
+            case failure(String?)
         }
     }
 }

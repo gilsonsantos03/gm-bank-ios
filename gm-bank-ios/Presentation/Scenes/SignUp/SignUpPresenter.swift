@@ -10,6 +10,11 @@ final class SignUpPresenter {
 
 extension SignUpPresenter: SignUpPresentationLogic {
     func presentUser(response: SignUpModels.RegisterUser.Response) {
-        view?.displayUser(viewModel: .init(authentication: response.authentication))
+        switch response {
+        case .success(let authentication):
+            view?.displayUser(viewModel: .success(authentication))
+        case .failure(let error):
+            view?.displayUser(viewModel: .failure(error))
+        }
     }
 }

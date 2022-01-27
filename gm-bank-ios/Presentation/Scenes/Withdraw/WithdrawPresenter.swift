@@ -10,6 +10,11 @@ final class WithdrawPresenter {
 
 extension WithdrawPresenter: WithdrawPresentationLogic {
     func presentUserMoney(response: WithdrawModels.WithdrawUserMoney.Response) {
-        view?.displayUserMoney(viewModel: .init())
+        switch response {
+        case .success:
+            view?.displayUserMoney(viewModel: .success)
+        case .failure(let error):
+            view?.displayUserMoney(viewModel: .failure(error))
+        }
     }
 }
