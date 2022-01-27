@@ -49,6 +49,7 @@ final class SignUpController: UIViewController {
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 26, weight: .bold)
         ]
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.hidesBackButton = true
     }
 }
 

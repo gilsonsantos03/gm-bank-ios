@@ -76,6 +76,9 @@
 		4435A12427A1D19B00EF6EAD /* GetUserExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A12327A1D19B00EF6EAD /* GetUserExtract.swift */; };
 		4435A12627A1E5FB00EF6EAD /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A12527A1E5FB00EF6EAD /* UITextField+Extension.swift */; };
 		4435A12827A2E50C00EF6EAD /* AlertError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A12727A2E50C00EF6EAD /* AlertError.swift */; };
+		4435A12B27A2E89200EF6EAD /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A12A27A2E89200EF6EAD /* SplashScreenViewController.swift */; };
+		4435A12D27A2E89A00EF6EAD /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A12C27A2E89A00EF6EAD /* SplashScreenView.swift */; };
+		4435A13727A2E8D500EF6EAD /* SplashScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435A13627A2E8D500EF6EAD /* SplashScreenConfigurator.swift */; };
 		44B5217127A0666E00B57BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217027A0666E00B57BC5 /* AppDelegate.swift */; };
 		44B5217327A0666E00B57BC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217227A0666E00B57BC5 /* SceneDelegate.swift */; };
 		44B5217527A0666E00B57BC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B5217427A0666E00B57BC5 /* ViewController.swift */; };
@@ -157,6 +160,9 @@
 		4435A12327A1D19B00EF6EAD /* GetUserExtract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserExtract.swift; sourceTree = "<group>"; };
 		4435A12527A1E5FB00EF6EAD /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		4435A12727A2E50C00EF6EAD /* AlertError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertError.swift; sourceTree = "<group>"; };
+		4435A12A27A2E89200EF6EAD /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		4435A12C27A2E89A00EF6EAD /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		4435A13627A2E8D500EF6EAD /* SplashScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenConfigurator.swift; sourceTree = "<group>"; };
 		44B5216D27A0666E00B57BC5 /* gm-bank-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gm-bank-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B5217027A0666E00B57BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44B5217227A0666E00B57BC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +197,7 @@
 		4435A08827A072C000EF6EAD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4435A12927A2E85400EF6EAD /* SplashScreen */,
 				4435A10D27A1CC7600EF6EAD /* Extract */,
 				4435A0F827A1C3FE00EF6EAD /* Withdraw */,
 				4435A0E327A1A86D00EF6EAD /* Deposit */,
@@ -386,6 +393,16 @@
 				4435A11F27A1CCF800EF6EAD /* TransactionCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		4435A12927A2E85400EF6EAD /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4435A12A27A2E89200EF6EAD /* SplashScreenViewController.swift */,
+				4435A12C27A2E89A00EF6EAD /* SplashScreenView.swift */,
+				4435A13627A2E8D500EF6EAD /* SplashScreenConfigurator.swift */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 		44B5216427A0666E00B57BC5 = {
@@ -610,6 +627,7 @@
 				4435A0A527A0922C00EF6EAD /* HTTPMethod.swift in Sources */,
 				4435A0C327A0B5D500EF6EAD /* LoginPresenter.swift in Sources */,
 				4435A09C27A091C500EF6EAD /* NetworkError.swift in Sources */,
+				4435A12D27A2E89A00EF6EAD /* SplashScreenView.swift in Sources */,
 				4435A0E927A1A8CA00EF6EAD /* DepositInteractor.swift in Sources */,
 				4435A12827A2E50C00EF6EAD /* AlertError.swift in Sources */,
 				4435A0FE27A1C44800EF6EAD /* WithdrawInteractor.swift in Sources */,
@@ -618,10 +636,12 @@
 				4435A0B827A0935C00EF6EAD /* RegisterUser.swift in Sources */,
 				4435A0A727A0923D00EF6EAD /* ParameterEncoding.swift in Sources */,
 				4435A09227A0730800EF6EAD /* SignUpInteractor.swift in Sources */,
+				4435A13727A2E8D500EF6EAD /* SplashScreenConfigurator.swift in Sources */,
 				4435A0FC27A1C43D00EF6EAD /* WithdrawPresenter.swift in Sources */,
 				4435A09427A0730E00EF6EAD /* SignUpPresenter.swift in Sources */,
 				4435A0AC27A0926C00EF6EAD /* RegisterUserRequest.swift in Sources */,
 				4435A09F27A091EA00EF6EAD /* NetworkService.swift in Sources */,
+				4435A12B27A2E89200EF6EAD /* SplashScreenViewController.swift in Sources */,
 				4435A0DE27A0E05400EF6EAD /* UserBalance.swift in Sources */,
 				4435A10227A1C45600EF6EAD /* WithdrawView.swift in Sources */,
 				4435A11327A1CC9700EF6EAD /* ExtractPresenter.swift in Sources */,
