@@ -17,6 +17,6 @@ public struct Extract: Codable {
 }
 
 public enum Action: String, Codable {
-    case deposit = "DEPOSIT"
-    case withdrawn = "WITHDRAWN"
+    case deposit = "DEPÓSITO"
+    case withdrawn = "RETIRADA"
 }

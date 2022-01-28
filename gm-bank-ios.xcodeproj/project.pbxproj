@@ -256,7 +256,12 @@
 		4435A0A927A0925200EF6EAD /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				4435A0AD27A0928600EF6EAD /* UserRepository.swift */,
+				4435A0AB27A0926C00EF6EAD /* RegisterUserRequest.swift */,
+				4435A0C827A0BA3400EF6EAD /* LoginUserRequest.swift */,
+				4435A0DF27A0E0B200EF6EAD /* GetUserBalanceRequest.swift */,
+				4435A0F427A1B31100EF6EAD /* DepositUserMoneyRequest.swift */,
+				4435A10927A1C87E00EF6EAD /* WithdrawUserMoneyRequest.swift */,
+				4435A12127A1D0E500EF6EAD /* GetUserExtractRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -264,12 +269,7 @@
 		4435A0AA27A0925900EF6EAD /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				4435A0AB27A0926C00EF6EAD /* RegisterUserRequest.swift */,
-				4435A0C827A0BA3400EF6EAD /* LoginUserRequest.swift */,
-				4435A0DF27A0E0B200EF6EAD /* GetUserBalanceRequest.swift */,
-				4435A0F427A1B31100EF6EAD /* DepositUserMoneyRequest.swift */,
-				4435A10927A1C87E00EF6EAD /* WithdrawUserMoneyRequest.swift */,
-				4435A12127A1D0E500EF6EAD /* GetUserExtractRequest.swift */,
+				4435A0AD27A0928600EF6EAD /* UserRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
