@@ -53,7 +53,12 @@ final class DepositViewController: UIViewController {
 
 extension DepositViewController: DepositDisplayLogic {
     func displayUserMoney(viewModel: DepositModels.DepositUserMoney.ViewModel) {
-        router.routeToPreviousScene()
+        switch viewModel {
+        case .success:
+            router.routeToPreviousScene()
+        case .failure(let error):
+            AlertError.showAlert(error: error, viewController: self)
+        }
     }
 }
 

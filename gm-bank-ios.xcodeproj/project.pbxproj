@@ -408,7 +408,6 @@
 		44B5216427A0666E00B57BC5 = {
 			isa = PBXGroup;
 			children = (
-				4435A0AF27A092B000EF6EAD /* Domain */,
 				44B5216F27A0666E00B57BC5 /* gm-bank-ios */,
 				44B5216E27A0666E00B57BC5 /* Products */,
 				AA30C9FAF7F0FB36395FABFF /* Pods */,
@@ -427,6 +426,7 @@
 		44B5216F27A0666E00B57BC5 /* gm-bank-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4435A0AF27A092B000EF6EAD /* Domain */,
 				4435A0A827A0924D00EF6EAD /* Data */,
 				4435A09D27A091D300EF6EAD /* Network */,
 				4435A09A27A091B000EF6EAD /* Helpers */,
